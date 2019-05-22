@@ -2422,7 +2422,7 @@ nav a:hover {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  right: 5px;
+  right: 35%;
   background: #e0003b;
   color: #fff;
 }
