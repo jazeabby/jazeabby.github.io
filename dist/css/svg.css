@@ -1,0 +1,32 @@
+svg#freepik_stories-upload:not(.animated) .animable {
+    opacity: 0;
+}
+svg#freepik_stories-upload.animated #freepik--background-simple--inject-276 {
+    animation: 1s 1 forwards cubic-bezier(.36,-0.01,.5,1.38) zoomIn;animation-delay: 0s;
+}
+
+svg#freepik_stories-upload.animated #freepik--Clouds--inject-276 {
+    animation: 1.5s Infinite  linear floating;animation-delay: 0s;
+}
+
+@keyframes zoomIn {
+    0% {
+        opacity: 0;transform: scale(0.5); 
+    }
+    100% {
+        opacity: 1;transform: scale(1); 
+    }
+
+}
+@keyframes floating {
+    0% {
+        opacity: 1;transform: translateY(0px); 
+    }
+    50% {
+        transform: translateY(-10px); 
+    }
+    100% {
+        opacity: 1;transform: translateY(0px); 
+    }
+}
+
