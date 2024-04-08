@@ -1,0 +1,97 @@
+{
+  "openapi": "3.0.2",
+  "info": {
+    "title": "Swagger Petstore - OpenAPI 3.0",
+    "description": "This is a sample Pet Store Server based on the OpenAPI 3.0 specification.  You can find out more about\nSwagger at [http://jazeabby.in](http://jazeabby.in). In the third iteration of the pet store, we've switched to the design first approach!\nYou can now help us improve the API whether it's by making changes to the definition itself or to the code.\nThat way, with time, we can improve the API in general, and expose some of the new features in OAS3.\n\nSome useful links:\n- [The Pet Store repository](https://github.com/swagger-api/swagger-petstore)\n- [The source API definition for the Pet Store](https://github.com/swagger-api/swagger-petstore/blob/master/src/main/resources/openapi.yaml)",
+    "termsOfService": "http://jazeabby.in/terms/",
+    "contact": { "email": "hello@jazeabby.in" },
+    "license": {
+      "name": "Apache 2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+    },
+    "version": "1.0.19"
+  },
+  "externalDocs": {
+    "description": "Find out more about Swagger",
+    "url": "http://jazeabby.in"
+  },
+  "servers": [{ "url": "/api/me.php" }],
+  "tags": [
+    { "name": "user", "description": "Operations about user" }
+  ],
+  "paths": {
+    "/me.php": {
+      "get": {
+        "tags": ["user"],
+        "summary": "Get user",
+        "description": "This can only be done by the logged in user.",
+        "operationId": "getUser",
+        "requestBody": {
+          "description": "Get user object",
+          "content": {
+            "application/json": {
+              "schema": { "$ref": "#/components/schemas/User" }
+            },
+            "application/xml": {
+              "schema": { "$ref": "#/components/schemas/User" }
+            },
+            "application/x-www-form-urlencoded": {
+              "schema": { "$ref": "#/components/schemas/User" }
+            }
+          }
+        },
+        "responses": {
+          "default": {
+            "description": "successful operation",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/User" }
+              },
+              "application/xml": {
+                "schema": { "$ref": "#/components/schemas/User" }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "User": {
+        "type": "array",
+        "properties": {
+          "id": { "type": "integer", "format": "int64", "example": 10 },
+          "username": { "type": "string", "example": "theUser" },
+          "firstName": { "type": "string", "example": "John" },
+          "lastName": { "type": "string", "example": "James" },
+          "email": { "type": "string", "example": "john@email.com" },
+          "password": { "type": "string", "example": "12345" },
+          "phone": { "type": "string", "example": "12345" },
+          "userStatus": {
+            "type": "integer",
+            "description": "User Status",
+            "format": "int32",
+            "example": 1
+          }
+        },
+        "xml": { "name": "user" }
+      }
+    },
+    "requestBodies": {
+      "UserArray": {
+        "description": "List of user object",
+        "content": {
+          "application/json": {
+            "schema": {
+              "type": "array",
+              "items": { "$ref": "#/components/schemas/User" }
+            }
+          }
+        }
+      }
+    },
+    "securitySchemes": {
+    }
+  }
+}
