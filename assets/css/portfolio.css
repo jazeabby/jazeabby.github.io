@@ -1,0 +1,123 @@
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+body {
+  background-color: #0a0a0a;
+}
+
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 1rem;
+  z-index: 100;
+  padding: 0.5rem 1rem;
+  background: #7bd1fa;
+  color: #051425;
+  font-family: "Hanken Grotesk", sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 0.25rem;
+}
+
+.skip-link:focus {
+  top: 1rem;
+}
+
+:focus-visible {
+  outline: 2px solid #7bd1fa;
+  outline-offset: 2px;
+}
+
+.skill-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.skill-chip img {
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+}
+
+.skill-chip:hover img {
+  filter: brightness(0) saturate(100%) invert(78%) sepia(42%) saturate(600%) hue-rotate(166deg) brightness(101%) contrast(96%);
+}
+
+#mobile-menu {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+}
+
+#mobile-menu.is-open {
+  max-height: 24rem;
+  opacity: 1;
+}
+
+#nav-toggle[aria-expanded="true"] .nav-icon-open {
+  display: none;
+}
+
+#nav-toggle[aria-expanded="true"] .nav-icon-close {
+  display: block;
+}
+
+#nav-toggle[aria-expanded="false"] .nav-icon-open {
+  display: block;
+}
+
+#nav-toggle[aria-expanded="false"] .nav-icon-close {
+  display: none;
+}
+
+.hero-typed::after {
+  content: "|";
+  margin-left: 2px;
+  animation: blink 1s step-end infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-typed::after {
+    animation: none;
+  }
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+.profile-photo {
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+.experience-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.experience-link svg {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+}
