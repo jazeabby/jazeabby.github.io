@@ -50,14 +50,20 @@ body {
   gap: 8px;
 }
 
+.skill-chip:hover {
+  color: #245682;
+  background-color: rgba(230, 239, 250, 1);
+}
+
 .skill-chip img {
   width: 28px;
   height: 28px;
   flex-shrink: 0;
+  filter: brightness(0) saturate(100%) invert(78%) sepia(42%) saturate(600%) hue-rotate(293deg) brightness(101%) contrast(96%);
 }
 
 .skill-chip:hover img {
-  filter: brightness(0) saturate(100%) invert(78%) sepia(42%) saturate(600%) hue-rotate(166deg) brightness(101%) contrast(96%);
+  filter: brightness(0) saturate(100%) invert(0%) sepia(0%) saturate(100%) hue-rotate(293deg) brightness(50%) contrast(96%);
 }
 
 #mobile-menu {
@@ -186,6 +192,22 @@ body {
 
 #hero .parallax-panel {
   flex: 0 0 auto;
+}
+
+.content-panel {
+  background: rgba(5, 20, 37, 0.28);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(68, 71, 72, 0.5);
+  border-radius: 0.25rem;
+  padding: 1.25rem;
+  box-shadow: 0 8px 32px rgba(1, 15, 32, 0.35);
+}
+
+@media (min-width: 768px) {
+  .content-panel {
+    padding: 2rem;
+  }
 }
 
 .section-scroll-hint {
