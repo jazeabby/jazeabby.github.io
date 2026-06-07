@@ -198,6 +198,29 @@ body {
   justify-content: center;
 }
 
+.hero-portrait {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: min(62vw, 760px);
+  z-index: 1;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.hero-portrait img {
+  width: 90%;
+  float: right;
+  height: 100vh;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+  filter: saturate(120%);
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, #000 50%);
+  mask-image: linear-gradient(to right, transparent 0%, #000 50%);
+}
+
 #hero .parallax-panel {
   flex: 0 0 auto;
 }
