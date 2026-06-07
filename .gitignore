@@ -30,3 +30,4 @@ app/.svelte-kit/
 app/build/
 
 .cursor/
+AGENT.md
