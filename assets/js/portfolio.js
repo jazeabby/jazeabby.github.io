@@ -85,4 +85,38 @@
     var fallback = (typedEl.dataset.typedItems || "Backend Engineer").split(",")[0].trim();
     typedEl.textContent = fallback;
   }
+
+  var parallaxSections = document.querySelectorAll(".parallax-section");
+  var reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var parallaxTicking = false;
+
+  function updateParallax() {
+    parallaxSections.forEach(function (section) {
+      var bg = section.querySelector(".parallax-bg");
+      if (!bg) return;
+
+      if (reducedMotion) {
+        bg.style.transform = "";
+        return;
+      }
+
+      var speed = parseFloat(bg.dataset.parallaxSpeed || "0.3");
+      var rect = section.getBoundingClientRect();
+      var offset = rect.top * speed;
+      bg.style.transform = "translate3d(0, " + offset + "px, 0)";
+    });
+    parallaxTicking = false;
+  }
+
+  function requestParallaxUpdate() {
+    if (parallaxTicking) return;
+    parallaxTicking = true;
+    window.requestAnimationFrame(updateParallax);
+  }
+
+  if (parallaxSections.length) {
+    updateParallax();
+    window.addEventListener("scroll", requestParallaxUpdate, { passive: true });
+    window.addEventListener("resize", requestParallaxUpdate);
+  }
 })();

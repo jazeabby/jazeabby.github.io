@@ -121,3 +121,77 @@ body {
   height: 14px;
   flex-shrink: 0;
 }
+
+.parallax-section {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+}
+
+.parallax-bg {
+  position: absolute;
+  top: -12%;
+  left: 0;
+  right: 0;
+  height: 124%;
+  z-index: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  will-change: transform;
+}
+
+.parallax-bg img {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  object-position: center;
+  display: block;
+}
+
+.parallax-scrim {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(
+    180deg,
+    rgba(5, 20, 37, 0.82) 0%,
+    rgba(5, 20, 37, 0.9) 50%,
+    rgba(5, 20, 37, 0.88) 100%
+  );
+  pointer-events: none;
+}
+
+.parallax-content {
+  position: relative;
+  z-index: 2;
+}
+
+#hero.parallax-section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#hero.parallax-section .parallax-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 6rem;
+}
+
+@media (min-width: 768px) {
+  #hero.parallax-section .parallax-content {
+    padding-top: 8rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .parallax-bg {
+    will-change: auto;
+  }
+}
