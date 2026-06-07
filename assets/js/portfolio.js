@@ -89,21 +89,47 @@
   var parallaxSections = document.querySelectorAll(".parallax-section");
   var reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   var parallaxTicking = false;
+  var exitStart = 0.62;
 
   function updateParallax() {
+    var viewportHeight = window.innerHeight;
+
     parallaxSections.forEach(function (section) {
-      var bg = section.querySelector(".parallax-bg");
-      if (!bg) return;
+      var img = section.querySelector(".parallax-bg img");
+      var content = section.querySelector(".parallax-content");
+      if (!img) return;
+
+      var rect = section.getBoundingClientRect();
+      var scrollRange = Math.max(1, section.offsetHeight - viewportHeight);
+      var scrolled = Math.max(0, Math.min(scrollRange, -rect.top));
+      var progress = scrolled / scrollRange;
+
+      if (content) {
+        if (reducedMotion) {
+          content.style.opacity = "";
+          content.style.transform = "";
+        } else {
+          var enterProgress = Math.max(0, Math.min(1, (viewportHeight - rect.top) / (viewportHeight * 0.9)));
+          content.style.opacity = String(0.4 + enterProgress * 0.6);
+          content.style.transform = "translate3d(0, " + (1 - enterProgress) * 32 + "px, 0)";
+        }
+      }
 
       if (reducedMotion) {
-        bg.style.transform = "";
+        img.style.transform = "";
         return;
       }
 
-      var speed = parseFloat(bg.dataset.parallaxSpeed || "0.3");
-      var rect = section.getBoundingClientRect();
-      var offset = rect.top * speed;
-      bg.style.transform = "translate3d(0, " + offset + "px, 0)";
+      if (progress <= exitStart) {
+        img.style.transform = "scale(1) translate3d(0, 0, 0)";
+        return;
+      }
+
+      var exitProgress = (progress - exitStart) / (1 - exitStart);
+      var scale = 1 + exitProgress * 0.15;
+      var translateY = -exitProgress * viewportHeight * 0.24;
+      img.style.transform =
+        "scale(" + scale + ") translate3d(0, " + translateY + "px, 0)";
     });
     parallaxTicking = false;
   }
@@ -115,8 +141,23 @@
   }
 
   if (parallaxSections.length) {
-    updateParallax();
+    function layoutParallaxSections() {
+      var viewportHeight = window.innerHeight;
+      parallaxSections.forEach(function (section) {
+        var content = section.querySelector(".parallax-content");
+        if (!content) return;
+        var tail = viewportHeight * 0.85;
+        var minHeight = Math.max(viewportHeight * 2, content.offsetHeight + tail);
+        section.style.minHeight = minHeight + "px";
+      });
+      updateParallax();
+    }
+
+    layoutParallaxSections();
     window.addEventListener("scroll", requestParallaxUpdate, { passive: true });
-    window.addEventListener("resize", requestParallaxUpdate);
+    window.addEventListener("resize", function () {
+      layoutParallaxSections();
+      requestParallaxUpdate();
+    });
   }
 })();
