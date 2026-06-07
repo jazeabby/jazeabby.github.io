@@ -1,7 +1,21 @@
 window.EXPERIENCE_DATA = {
   "entries": [
     {
-      "period": "Oct 2024 — Present",
+      "period": "Jun 2025 — Present",
+      "role": "Senior Software Engineer — Data",
+      "company": "Jus Mundi, Paris, France",
+      "companyUrl": "https://jusmundi.com",
+      "projectsLabel": "Projects/Features contributed to:",
+      "bullets": [
+        "Data Ingestion Pipeline — Developed and maintained the data ingestion and transformation pipelines for the Jus Mundi platform, using Golang, Kafka and Python.",
+        "Search Engine Optimization — Re-built the search engine APIs for the Jus Mundi platform, using ElasticSearch and PHP(Symfony).",
+        "System Upgrades — Upgraded the PHP version from 7.4 to 8.2 and the Symfony version from 5.4 to 6.4, and the Docker configurations to support the new version.",
+        "Documentation — Created and maintained the tech documentation for the internal data platform + multiple services, using Notion, Gitlab Wiki and Markdown."
+      ],
+      "techStack": "Golang, PHP(Symfony), TypeScript, Kafka, Python, Docker, Redis, Postgres, ElasticSearch, Nomad"
+    },
+    {
+      "period": "Oct 2024 — May 2025",
       "role": "Backend Software Engineer — Platform",
       "company": "Polar Analytics, Paris, France",
       "companyUrl": "https://polaranalytics.co",
@@ -18,7 +32,7 @@ window.EXPERIENCE_DATA = {
       "companyUrl": "https://escape.tech",
       "projectsLabel": "Projects/Features contributed to:",
       "bullets": [
-        "Escape SaaS Integrations — Worked on multiple integrations including [JIRA](https://docs.escape.tech/documentation/governance/workflows/jira), [Github](https://docs.escape.tech/documentation/inventory/integrations/github), [Gitlab](https://docs.escape.tech/documentation/inventory/integrations/gitlab), [Bitbucket](https://docs.escape.tech/documentation/inventory/integrations/bitbucket/), [Postman](https://docs.escape.tech/documentation/inventory/integrations/postman), [Apigee](https://docs.escape.tech/documentation/inventory/integrations/apigee/), [Azure Devops](https://docs.escape.tech/documentation/inventory/integrations/azure-devops/), [GCP](https://docs.escape.tech/documentation/inventory/integrations/gcp/), and more."
+        "Escape SaaS Integrations — Worked on multiple integrations including [JIRA](https://docs.escape.tech/documentation/automate/notifications-ticketing/jira/), [Github](https://docs.escape.tech/documentation/asm/integrations/github/), [Gitlab](https://docs.escape.tech/documentation/asm/integrations/gitlab/), [Bitbucket](https://docs.escape.tech/documentation/asm/integrations/bitbucket/), [Postman](https://docs.escape.tech/documentation/asm/integrations/postman/), [Azure Devops](https://docs.escape.tech/documentation/asm/integrations/azure/), [GCP](https://docs.escape.tech/documentation/asm/integrations/gcp), and more."
       ],
       "techStack": "NodeJS, SvelteJS, TypeScript, Python, Golang, Kafka, Docker, Kubernetes, Postgres, Grafana, AWS"
     },
