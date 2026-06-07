@@ -23,3 +23,10 @@ Homestead.json
 .phpunit.result.cache
 
 error_log
+
+# Backend Space Station (SvelteKit app)
+app/node_modules/
+app/.svelte-kit/
+app/build/
+
+.cursor/

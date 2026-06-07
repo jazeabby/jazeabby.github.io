@@ -1,726 +1,536 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html class="dark" lang="en">
 <head>
   <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abhishek Jain - Senior Software Engineer | Backend Engineer</title>
+  <meta name="description" content="Senior Software Engineer with 8+ years building scalable backend systems. PHP, Laravel, Node.js, Golang. Based in Paris, France.">
+  <meta property="og:title" content="Abhishek Jain - Senior Software Engineer">
+  <meta property="og:description" content="Backend engineer specializing in resilient distributed systems, integrations, and high-throughput APIs.">
+  <meta property="og:type" content="website">
 
-  <title>Abhishek Jain - jazeabby | Backend Engineer | Web Enthusiast | Drummer</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
-
-  <!-- Favicons -->
   <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
   <link rel="manifest" href="assets/img/favicon/site.webmanifest">
 
-  <!-- Google Fonts -->
-  <link defer href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-  <style>svg#freepik_stories-programming:not(.animated) .animable {opacity: 0;}svg#freepik_stories-programming.animated #freepik--background-complete--inject-76 {animation: 1s 1 forwards cubic-bezier(.36,-0.01,.5,1.38) lightSpeedLeft;animation-delay: 0s;}svg#freepik_stories-programming.animated #freepik--Shadow--inject-76 {animation: 1s 1 forwards ease-in fadeIn;animation-delay: 0s;}svg#freepik_stories-programming.animated #freepik--Desk--inject-76 {animation: 1s 1 forwards cubic-bezier(.36,-0.01,.5,1.38) lightSpeedRight;animation-delay: 0s;}svg#freepik_stories-programming.animated #freepik--Character--inject-76 {animation: 1s 1 forwards cubic-bezier(.36,-0.01,.5,1.38) lightSpeedRight;animation-delay: 0s;}            @keyframes lightSpeedLeft {              from {                transform: translate3d(-50%, 0, 0) skewX(20deg);                opacity: 0;              }              60% {                transform: skewX(-10deg);                opacity: 1;              }              80% {                transform: skewX(2deg);              }              to {                opacity: 1;                transform: translate3d(0, 0, 0);              }            }                    @keyframes fadeIn {                0% {                    opacity: 0;                }                100% {                    opacity: 1;                }            }                    @keyframes lightSpeedRight {              from {                transform: translate3d(50%, 0, 0) skewX(-20deg);                opacity: 0;              }              60% {                transform: skewX(10deg);                opacity: 1;              }              80% {                transform: skewX(-2deg);              }              to {                opacity: 1;                transform: translate3d(0, 0, 0);              }            }        
-  .skills-content p {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    align-items: center;
-  }
-  .skills-content p > button.btn {
-    vertical-align: middle;
-    display: flex;
-    margin-right: 10px;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: row;
-  }
-  </style>
-  <!-- =======================================================
-  * Template Name: MyResume
-  * Updated: Nov 17 2023 with Bootstrap v5.3.2
-  * Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
-
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "on-tertiary": "#2d3133",
+            "secondary": "#7bd1fa",
+            "surface-tint": "#c9c6c5",
+            "inverse-surface": "#d5e3fc",
+            "on-tertiary-fixed": "#191c1e",
+            "on-secondary-fixed-variant": "#004d66",
+            "on-surface-variant": "#c4c7c7",
+            "tertiary-fixed": "#e0e3e5",
+            "surface-container-high": "#1d2b3d",
+            "surface": "#051425",
+            "outline-variant": "#444748",
+            "tertiary-fixed-dim": "#c4c7c9",
+            "on-primary-fixed-variant": "#474646",
+            "primary-container": "#0a0a0a",
+            "inverse-primary": "#5f5e5e",
+            "primary": "#c9c6c5",
+            "on-error": "#690005",
+            "on-error-container": "#ffdad6",
+            "surface-container-low": "#0d1c2e",
+            "error": "#ffb4ab",
+            "surface-container": "#122032",
+            "on-secondary-container": "#e9f6ff",
+            "background": "#051425",
+            "surface-container-lowest": "#010f20",
+            "inverse-on-surface": "#233144",
+            "tertiary-container": "#080b0c",
+            "on-primary": "#313030",
+            "on-primary-fixed": "#1c1b1b",
+            "on-tertiary-fixed-variant": "#444749",
+            "on-primary-container": "#7b7979",
+            "surface-dim": "#051425",
+            "secondary-fixed": "#c0e8ff",
+            "tertiary": "#c4c7c9",
+            "error-container": "#93000a",
+            "surface-variant": "#283648",
+            "on-surface": "#d5e3fc",
+            "on-tertiary-container": "#777a7c",
+            "surface-bright": "#2c3a4d",
+            "secondary-fixed-dim": "#7bd1fa",
+            "on-background": "#d5e3fc",
+            "primary-fixed-dim": "#c9c6c5",
+            "secondary-container": "#00799e",
+            "primary-fixed": "#e5e2e1",
+            "on-secondary": "#003547",
+            "outline": "#8e9192",
+            "surface-container-highest": "#283648",
+            "on-secondary-fixed": "#001e2b"
+          },
+          borderRadius: {
+            DEFAULT: "0.125rem",
+            lg: "0.25rem",
+            xl: "0.5rem",
+            full: "0.75rem"
+          },
+          spacing: {
+            lg: "48px",
+            gutter: "24px",
+            "margin-desktop": "64px",
+            md: "24px",
+            xs: "4px",
+            "margin-mobile": "20px",
+            sm: "12px",
+            base: "8px",
+            xl: "80px"
+          },
+          fontFamily: {
+            "label-md": ["Hanken Grotesk", "sans-serif"],
+            "label-sm": ["Hanken Grotesk", "sans-serif"],
+            "headline-sm": ["Hanken Grotesk", "sans-serif"],
+            "headline-lg": ["Hanken Grotesk", "sans-serif"],
+            "display-lg": ["Hanken Grotesk", "sans-serif"],
+            "body-md": ["Source Serif 4", "serif"],
+            "display-lg-mobile": ["Hanken Grotesk", "sans-serif"],
+            "body-lg": ["Source Serif 4", "serif"]
+          },
+          fontSize: {
+            "label-md": ["14px", { lineHeight: "20px", letterSpacing: "0.05em", fontWeight: "500" }],
+            "label-sm": ["12px", { lineHeight: "16px", letterSpacing: "0.02em", fontWeight: "500" }],
+            "headline-sm": ["24px", { lineHeight: "32px", letterSpacing: "-0.01em", fontWeight: "600" }],
+            "headline-lg": ["48px", { lineHeight: "56px", letterSpacing: "-0.02em", fontWeight: "600" }],
+            "display-lg": ["72px", { lineHeight: "80px", letterSpacing: "-0.04em", fontWeight: "700" }],
+            "body-md": ["16px", { lineHeight: "28px", fontWeight: "400" }],
+            "display-lg-mobile": ["40px", { lineHeight: "48px", letterSpacing: "-0.02em", fontWeight: "700" }],
+            "body-lg": ["20px", { lineHeight: "32px", fontWeight: "400" }]
+          }
+        }
+      }
+    };
+  </script>
+  <link href="assets/css/portfolio.css" rel="stylesheet">
 </head>
+<body class="text-on-surface antialiased selection:bg-secondary/30 selection:text-secondary">
 
-<body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-  <!-- ======= Mobile nav toggle button ======= -->
-  <!-- <button type="button" class="mobile-nav-toggle d-xl-none"><i class="bi bi-list mobile-nav-toggle"></i></button> -->
-  <i class="bi bi-list mobile-nav-toggle d-lg-none"></i>
-  <!-- ======= Header ======= -->
-  <header id="header" class="d-flex flex-column justify-content-center">
+  <header class="fixed top-0 left-0 w-full z-50 bg-surface/80 backdrop-blur-md border-b border-outline-variant/30">
+    <div class="max-w-[1280px] mx-auto px-margin-mobile md:px-margin-desktop">
+      <nav class="flex justify-between items-center h-20" aria-label="Primary">
+        <a href="#hero" class="font-headline-sm text-headline-sm font-bold tracking-tight text-on-surface hover:text-secondary transition-colors">
+          jazeabby
+        </a>
 
-    <nav id="navbar" class="navbar nav-menu">
-      <ul>
-        <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
-        <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About Me</span></a></li>
-        <li><a href="#skills" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>My Skills</span></a></li>
-        <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>My Experience</span></a></li>
-        <!-- <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li> -->
-        <!-- <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Services</span></a></li> -->
-        <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact Me</span></a></li>
-      </ul>
-    </nav><!-- .nav-menu -->
+        <div class="hidden md:flex gap-md items-center">
+          <a class="text-on-surface-variant hover:text-secondary transition-colors duration-300 font-label-md text-label-md" href="#philosophy">About</a>
+          <a class="text-on-surface-variant hover:text-secondary transition-colors duration-300 font-label-md text-label-md" href="#systems">Systems</a>
+          <a class="text-on-surface-variant hover:text-secondary transition-colors duration-300 font-label-md text-label-md" href="#experience">Experience</a>
+          <a class="text-on-surface-variant hover:text-secondary transition-colors duration-300 font-label-md text-label-md" href="#education">Education</a>
+        </div>
 
-  </header><!-- End Header -->
+        <div class="flex items-center gap-sm">
+          <a class="hidden md:inline-flex px-md py-sm border border-outline-variant text-on-surface font-label-md text-label-md hover:text-secondary hover:border-secondary transition-colors duration-300 rounded" href="#contact">Contact</a>
+          <button id="nav-toggle" type="button" class="md:hidden p-sm text-on-surface border border-outline-variant/50 rounded" aria-expanded="false" aria-controls="mobile-menu" aria-label="Toggle navigation menu">
+            <svg class="nav-icon-open w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+            <svg class="nav-icon-close w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+          </button>
+        </div>
+      </nav>
 
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex flex-column justify-content-center">
-    <div class="container" data-aos="zoom-in" data-aos-delay="100">
-      <h1>Abhishek Jain</h1>
-      <p>I'm <span class="typed" data-typed-items="Backend Engineer, Web Enthusiast, Freelancer, Drummer"></span></p>
-      <div class="social-links">
-        <a href="https://www.linkedin.com/in/jazeabby" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-        <a href="https://www.twitter.com/jazeabby" target="_blank" class="twitter"><i class="bx bxl-twitter"></i></a>
-        <!-- <a href="" target="_blank" class="instagram"><i class="bx bxl-instagram"></i></a> -->
-        <a href="https://jazeabby.medium.com" target="_blank" class="linkedin"><i class="bx bxl-medium"></i></a>
+      <div id="mobile-menu" class="md:hidden pb-md border-t border-outline-variant/20" aria-hidden="true">
+        <div class="flex flex-col gap-sm pt-md">
+          <a class="text-on-surface-variant hover:text-secondary font-label-md text-label-md py-xs" href="#philosophy">About</a>
+          <a class="text-on-surface-variant hover:text-secondary font-label-md text-label-md py-xs" href="#systems">Systems</a>
+          <a class="text-on-surface-variant hover:text-secondary font-label-md text-label-md py-xs" href="#experience">Experience</a>
+          <a class="text-on-surface-variant hover:text-secondary font-label-md text-label-md py-xs" href="#education">Education</a>
+          <a class="text-on-surface-variant hover:text-secondary font-label-md text-label-md py-xs" href="#contact">Contact</a>
+        </div>
       </div>
     </div>
-  </section><!-- End Hero -->
+  </header>
 
-  <main id="main">
+  <main id="main" class="pt-24 md:pt-32 pb-xl">
 
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>A little about me..</h2>
-          <div class="animation-wrapper" style="height: 90vh;padding-top:10px">
-            <div class="animation" style="width: 40%; float: left;">
-              
-              <svg class="" id="freepik_stories-programming" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs"><g id="freepik--background-complete--inject-76" class="animable" style="transform-origin: 250px 228.23px;"><rect y="382.4" width="500" height="0.25" style="fill: rgb(235, 235, 235); transform-origin: 250px 382.525px;" id="elh8wfibutagk" class="animable"></rect><path d="M237,337.8H43.91a5.71,5.71,0,0,1-5.7-5.71V60.66A5.71,5.71,0,0,1,43.91,55H237a5.71,5.71,0,0,1,5.71,5.71V332.09A5.71,5.71,0,0,1,237,337.8ZM43.91,55.2a5.46,5.46,0,0,0-5.45,5.46V332.09a5.46,5.46,0,0,0,5.45,5.46H237a5.47,5.47,0,0,0,5.46-5.46V60.66A5.47,5.47,0,0,0,237,55.2Z" style="fill: rgb(235, 235, 235); transform-origin: 140.46px 196.4px;" id="eltq6s2xv4lza" class="animable"></path><path d="M453.31,337.8H260.21a5.72,5.72,0,0,1-5.71-5.71V60.66A5.72,5.72,0,0,1,260.21,55h193.1A5.71,5.71,0,0,1,459,60.66V332.09A5.71,5.71,0,0,1,453.31,337.8ZM260.21,55.2a5.47,5.47,0,0,0-5.46,5.46V332.09a5.47,5.47,0,0,0,5.46,5.46h193.1a5.47,5.47,0,0,0,5.46-5.46V60.66a5.47,5.47,0,0,0-5.46-5.46Z" style="fill: rgb(235, 235, 235); transform-origin: 356.75px 196.4px;" id="el4boib0ky5sg" class="animable"></path><rect x="174.44" y="391.92" width="26" height="0.25" style="fill: rgb(235, 235, 235); transform-origin: 187.44px 392.045px;" id="elj9hqyal9ls" class="animable"></rect><rect x="52.46" y="389.21" width="54.1" height="0.25" style="fill: rgb(235, 235, 235); transform-origin: 79.51px 389.335px;" id="elyvpj6wstu3k" class="animable"></rect><rect x="147.12" y="401.21" width="26.32" height="0.25" style="fill: rgb(235, 235, 235); transform-origin: 160.28px 401.335px;" id="el298y8m0kqq" class="animable"></rect><rect x="258.23" y="399.53" width="38.83" height="0.25" style="fill: rgb(235, 235, 235); transform-origin: 277.645px 399.655px;" id="elynfomw5lj4i" class="animable"></rect><rect x="305.96" y="399.53" width="10.69" height="0.25" style="fill: rgb(235, 235, 235); transform-origin: 311.305px 399.655px;" id="elhopz19xzjo6" class="animable"></rect><rect x="395.35" y="395.31" width="54.56" height="0.25" style="fill: rgb(235, 235, 235); transform-origin: 422.63px 395.435px;" id="eleoi6wqbwqn8" class="animable"></rect><g id="elr8kwiaohtlc"><rect x="381.06" y="248.05" width="45.65" height="125.47" style="fill: rgb(240, 240, 240); transform-origin: 403.885px 310.785px; transform: rotate(180deg);" class="animable"></rect></g><g id="elgehahtcqh5u"><rect x="181.74" y="373.53" width="236.21" height="8.87" style="fill: rgb(240, 240, 240); transform-origin: 299.845px 377.965px; transform: rotate(180deg);" class="animable"></rect></g><rect x="172.97" y="248.05" width="208.09" height="125.47" style="fill: rgb(245, 245, 245); transform-origin: 277.015px 310.785px;" id="ely0mcptalic9" class="animable"></rect><rect x="172.97" y="256.55" width="208.89" height="45.93" style="fill: rgb(240, 240, 240); transform-origin: 277.415px 279.515px;" id="elav67y091us8" class="animable"></rect><rect x="172.97" y="310.85" width="208.89" height="45.93" style="fill: rgb(240, 240, 240); transform-origin: 277.415px 333.815px;" id="elwi4shks2c5" class="animable"></rect><g id="el8lftu2b12l6"><rect x="381.06" y="256.55" width="7.9" height="45.93" style="fill: rgb(230, 230, 230); transform-origin: 385.01px 279.515px; transform: rotate(180deg);" class="animable"></rect></g><g id="elie2s8vtrpsq"><rect x="381.06" y="310.85" width="7.9" height="45.93" style="fill: rgb(230, 230, 230); transform-origin: 385.01px 333.815px; transform: rotate(180deg);" class="animable"></rect></g><g id="elpkdiqw3mv9p"><rect x="166.89" y="240.33" width="214.17" height="7.72" style="fill: rgb(240, 240, 240); transform-origin: 273.975px 244.19px; transform: rotate(180deg);" class="animable"></rect></g><rect x="381.06" y="240.33" width="52.03" height="7.72" style="fill: rgb(230, 230, 230); transform-origin: 407.075px 244.19px;" id="elbebngm1kc3" class="animable"></rect><g id="elp5airb6uzg9"><rect x="328.14" y="81.68" width="107.43" height="135.04" style="fill: rgb(240, 240, 240); transform-origin: 381.855px 149.2px; transform: rotate(180deg);" class="animable"></rect></g><g id="el2uuj4nokgjp"><rect x="304.43" y="81.68" width="127.03" height="135.04" style="fill: rgb(245, 245, 245); transform-origin: 367.945px 149.2px; transform: rotate(180deg);" class="animable"></rect></g><g id="ellpz8ad7muac"><rect x="311.06" y="96.33" width="113.76" height="105.75" style="fill: rgb(255, 255, 255); transform-origin: 367.94px 149.205px; transform: rotate(-90deg);" class="animable"></rect></g><path d="M379.65,161.52l20.21-9.37v-5.89l-20.21-9.39v7.06l12.28,5.29-12.28,5.29Z" style="fill: rgb(230, 230, 230); transform-origin: 389.755px 149.195px;" id="elyfattf2988g" class="animable"></path><path d="M366.47,134.15h-3.69l6.54,30.11H373Z" style="fill: rgb(230, 230, 230); transform-origin: 367.89px 149.205px;" id="elhhuga0ptefa" class="animable"></path><path d="M356.23,154.51,344,149.22l12.28-5.29v-7.06L336,146.26v5.89l20.21,9.37Z" style="fill: rgb(230, 230, 230); transform-origin: 346.14px 149.195px;" id="elftc5m0ekumo" class="animable"></path><g id="el454cl5q597d"><rect x="117.21" y="153.22" width="7.04" height="229.18" style="fill: rgb(240, 240, 240); transform-origin: 120.73px 267.81px; transform: rotate(180deg);" class="animable"></rect></g><path d="M115.75,380.8l-.19-1a5.58,5.58,0,0,0,3.33-2.91c1.83-3.24,2.94-10.15-2.15-24.63-7.84-22.32-3.16-40.32,6.17-76.2,1.62-6.25,3.46-13.33,5.37-21,7.17-28.67.54-46.45-4.79-60.74-4.13-11.09-7.4-19.85-3.22-30l.93.38c-4,9.78-.83,18.38,3.23,29.27,5.38,14.41,12.07,32.36,4.82,61.32-1.91,7.66-3.75,14.74-5.37,21C114.6,312,109.94,329.92,117.69,352c5.23,14.89,4,22.09,2,25.5A6.48,6.48,0,0,1,115.75,380.8Z" style="fill: rgb(240, 240, 240); transform-origin: 122.6px 272.56px;" id="elk435e8zz6q" class="animable"></path><polygon points="107.99 382.4 133.48 382.4 126.39 378.22 115.08 378.22 107.99 382.4" style="fill: rgb(240, 240, 240); transform-origin: 120.735px 380.31px;" id="elmfoufn5xvy" class="animable"></polygon><polygon points="70.31 182.41 171.16 182.41 160.06 97.67 81.41 97.67 70.31 182.41" style="fill: rgb(245, 245, 245); transform-origin: 120.735px 140.04px;" id="el42pf1y6etf" class="animable"></polygon><polygon points="219.88 196.38 273.72 196.38 266.63 240.33 226.97 240.33 219.88 196.38" style="fill: rgb(240, 240, 240); transform-origin: 246.8px 218.355px;" id="elize44yrzbui" class="animable"></polygon><path d="M241.51,210.68c14.68-5.31,25.92-13.29,13.34-29.44s-32.07-16.07-45.21-8.92c-16.74,9.1-13.38,35.45-13.38,35.45S226.83,216,241.51,210.68Z" style="fill: rgb(224, 224, 224); transform-origin: 228.138px 190.095px;" id="elgl90t0689o6" class="animable"></path><path d="M255.78,196c-11.23-7.65-19.19-16.5-6.16-25.84s29.1-4.55,38.76,4.12c12.31,11.06,5.2,30.47,5.2,30.47S267,203.61,255.78,196Z" style="fill: rgb(230, 230, 230); transform-origin: 269.251px 184.91px;" id="elboykus6hhf" class="animable"></path><path d="M236,176.59c13.14-.79,24.16-4.22,17.94-18.45s-22-18.22-34.31-15.78c-15.73,3.11-19.44,22.79-19.44,22.79S222.87,177.39,236,176.59Z" style="fill: rgb(240, 240, 240); transform-origin: 227.957px 159.159px;" id="eluaqkr2ee3g" class="animable"></path><path d="M252.5,168.2c-10.93-3.52-19.5-8.79-11.17-19.48s22.5-10.63,32.4-5.91c12.62,6,11.5,23.46,11.5,23.46S263.43,171.71,252.5,168.2Z" style="fill: rgb(235, 235, 235); transform-origin: 261.622px 154.576px;" id="elsgn2eo80frk" class="animable"></path><path d="M232,150c10.91,3.6,20.94,4.38,20.49-9.16S240.58,119,229.8,116.94c-13.75-2.56-23.11,12.19-23.11,12.19S221.11,146.37,232,150Z" style="fill: rgb(245, 245, 245); transform-origin: 229.597px 134.449px;" id="elo23u5kmyh6a" class="animable"></path><path d="M259.69,144.15c-7.81.54-14.56-.64-12-9.51s11.56-12.4,19-11.91c9.5.63,13.19,12,13.19,12S267.49,143.62,259.69,144.15Z" style="fill: rgb(250, 250, 250); transform-origin: 263.509px 133.473px;" id="elujne4sqwikm" class="animable"></path></g><g id="freepik--Shadow--inject-76" class="animable" style="transform-origin: 250px 416.24px;"><ellipse id="freepik--path--inject-76" cx="250" cy="416.24" rx="193.89" ry="11.32" style="fill: rgb(245, 245, 245); transform-origin: 250px 416.24px;" class="animable"></ellipse></g><g id="freepik--Desk--inject-76" class="animable" style="transform-origin: 249.385px 261.865px;"><rect x="79.51" y="251.09" width="339.75" height="12.19" style="fill: rgb(64, 123, 255); transform-origin: 249.385px 257.185px;" id="eldxc81a62cv6" class="animable"></rect><g id="el9plbeoz9tn"><rect x="79.51" y="251.09" width="90.93" height="12.19" style="fill: rgb(255, 255, 255); opacity: 0.3; transform-origin: 124.975px 257.185px;" class="animable"></rect></g><polygon points="171.89 263.28 163.98 263.28 168.12 416.06 171.89 416.06 175.66 416.06 179.81 263.28 171.89 263.28" style="fill: rgb(64, 123, 255); transform-origin: 171.895px 339.67px;" id="el2fn7ct3rs2q" class="animable"></polygon><g id="eldxesxbwjfhi"><polygon points="168.12 416.06 171.89 416.06 171.89 266.56 164.11 267.98 168.12 416.06" style="fill: rgb(255, 255, 255); opacity: 0.3; transform-origin: 168px 341.31px;" class="animable"></polygon></g><polygon points="96.92 263.28 89.01 263.28 93.15 416.06 96.92 416.06 100.69 416.06 104.83 263.28 96.92 263.28" style="fill: rgb(64, 123, 255); transform-origin: 96.92px 339.67px;" id="elw0jjg2tsxep" class="animable"></polygon><g id="el0ifwnqj8qdif"><polygon points="93.15 416.06 96.92 416.06 96.92 266.56 89.13 267.98 93.15 416.06" style="fill: rgb(255, 255, 255); opacity: 0.3; transform-origin: 93.025px 341.31px;" class="animable"></polygon></g><polygon points="401.85 263.28 393.94 263.28 398.08 416.06 401.85 416.06 405.62 416.06 409.77 263.28 401.85 263.28" style="fill: rgb(64, 123, 255); transform-origin: 401.855px 339.67px;" id="el87kufdab728" class="animable"></polygon><g id="el2qgyrs0v66w"><polygon points="398.08 416.06 401.85 416.06 401.85 266.56 394.07 267.98 398.08 416.06" style="fill: rgb(255, 255, 255); opacity: 0.3; transform-origin: 397.96px 341.31px;" class="animable"></polygon></g><polygon points="326.88 263.28 318.97 263.28 323.11 416.06 326.88 416.06 330.65 416.06 334.79 263.28 326.88 263.28" style="fill: rgb(64, 123, 255); transform-origin: 326.88px 339.67px;" id="el11oubu7zhbh" class="animable"></polygon><g id="el6qay89o8t8t"><polygon points="323.11 416.06 326.88 416.06 326.88 266.56 319.1 267.98 323.11 416.06" style="fill: rgb(255, 255, 255); opacity: 0.3; transform-origin: 322.99px 341.31px;" class="animable"></polygon></g><path d="M240.78,185.83H160a4.16,4.16,0,0,0-4.17,5.28l10.76,51.35a6.87,6.87,0,0,0,6.38,5.27h80.84a4.16,4.16,0,0,0,4.17-5.27l-10.77-51.35A6.87,6.87,0,0,0,240.78,185.83Z" style="fill: rgb(38, 50, 56); transform-origin: 206.904px 216.78px;" id="elftnijp3bfza" class="animable"></path><path d="M173.67,244.8a4.79,4.79,0,0,1-4.32-3.6l-10.76-51.35a2.35,2.35,0,0,1,.37-2,2.17,2.17,0,0,1,1.73-.73h80.84a4.79,4.79,0,0,1,4.32,3.6l10.76,51.35a2.35,2.35,0,0,1-.37,2,2.14,2.14,0,0,1-1.73.73Z" style="fill: rgb(255, 255, 255); transform-origin: 207.6px 215.96px;" id="els19fsalmk6i" class="animable"></path><g id="el3e54ocxa4rk"><path d="M234.66,240.69,224.46,192a2,2,0,0,1,1.94-2.39h13.12a2,2,0,0,1,1.94,1.58l10.2,48.65a2,2,0,0,1-1.94,2.39H236.6A2,2,0,0,1,234.66,240.69Z" style="fill: rgb(64, 123, 255); opacity: 0.4; transform-origin: 238.06px 215.92px;" class="animable"></path></g><polygon points="165.32 193.87 164.88 191.76 181.08 191.76 181.52 193.87 165.32 193.87" style="fill: rgb(64, 123, 255); transform-origin: 173.2px 192.815px;" id="elpzc2vybpau9" class="animable"></polygon><polygon points="172.8 199.11 172.36 197 200.75 197 201.2 199.11 172.8 199.11" style="fill: rgb(235, 235, 235); transform-origin: 186.78px 198.055px;" id="elssdzlptl7ks" class="animable"></polygon><polygon points="174.3 204.34 173.85 202.23 205.68 202.23 206.12 204.34 174.3 204.34" style="fill: rgb(235, 235, 235); transform-origin: 189.985px 203.285px;" id="elfeamncoqt2h" class="animable"></polygon><polygon points="175.79 209.58 175.35 207.47 200.97 207.47 201.42 209.58 175.79 209.58" style="fill: rgb(235, 235, 235); transform-origin: 188.385px 208.525px;" id="elf5gxvyvomfi" class="animable"></polygon><polygon points="170.25 218.07 169.8 215.96 180.05 215.96 180.49 218.07 170.25 218.07" style="fill: rgb(64, 123, 255); transform-origin: 175.145px 217.015px;" id="elscsow1dkgz" class="animable"></polygon><polygon points="177.72 223.3 177.28 221.19 189.76 221.19 190.21 223.3 177.72 223.3" style="fill: rgb(235, 235, 235); transform-origin: 183.745px 222.245px;" id="eldi38olh9kas" class="animable"></polygon><polygon points="193.2 223.3 192.75 221.19 205.24 221.19 205.68 223.3 193.2 223.3" style="fill: rgb(235, 235, 235); transform-origin: 199.215px 222.245px;" id="elshicozt544f" class="animable"></polygon><polygon points="179.22 228.54 178.78 226.43 220.98 226.43 221.42 228.54 179.22 228.54" style="fill: rgb(235, 235, 235); transform-origin: 200.1px 227.485px;" id="elnbrvqfmvpjc" class="animable"></polygon><polygon points="180.71 233.77 180.27 231.66 212.45 231.66 212.89 233.77 180.71 233.77" style="fill: rgb(235, 235, 235); transform-origin: 196.58px 232.715px;" id="elslzbvq0bg3k" class="animable"></polygon><path d="M278.52,247.42H172.16c-2.9,0-4.78,1.65-4.17,3.67H284.9C284.3,249.07,281.42,247.42,278.52,247.42Z" style="fill: rgb(38, 50, 56); transform-origin: 226.388px 249.255px;" id="el8ty70os47hc" class="animable"></path><g id="elzhg5w2zy0r"><path d="M137.21,172.85,127,124.19a2,2,0,0,1,1.94-2.38h82.6a2,2,0,0,1,1.94,1.57L223.69,172a2,2,0,0,1-1.94,2.39h-82.6A2,2,0,0,1,137.21,172.85Z" style="fill: rgb(64, 123, 255); opacity: 0.1; transform-origin: 175.346px 148.1px;" class="animable"></path></g><polygon points="166.57 123.41 149.23 123.41 148.84 121.54 166.18 121.54 166.57 123.41" style="fill: rgb(64, 123, 255); transform-origin: 157.705px 122.475px;" id="elej6m2y8xg4v" class="animable"></polygon><g id="el2m76sv7f0uq"><polygon points="163.75 126.39 156.79 126.39 156.4 124.52 163.36 124.52 163.75 126.39" style="fill: rgb(64, 123, 255); opacity: 0.4; transform-origin: 160.075px 125.455px;" class="animable"></polygon></g><g id="elilk1p5umuaf"><polygon points="175.33 126.39 164.61 126.39 164.22 124.52 174.94 124.52 175.33 126.39" style="fill: rgb(64, 123, 255); opacity: 0.4; transform-origin: 169.775px 125.455px;" class="animable"></polygon></g><g id="elwhei8jborcg"><polygon points="180 129.36 157.41 129.36 157.02 127.49 179.62 127.49 180 129.36" style="fill: rgb(64, 123, 255); opacity: 0.4; transform-origin: 168.51px 128.425px;" class="animable"></polygon></g><g id="els0tyro4dnib"><polygon points="177.13 132.34 158.03 132.34 157.64 130.47 176.74 130.47 177.13 132.34" style="fill: rgb(64, 123, 255); opacity: 0.4; transform-origin: 167.385px 131.405px;" class="animable"></polygon></g><g id="elxpcykanf9x"><polygon points="189.8 163.95 177.64 163.95 178.03 165.81 190.19 165.81 189.8 163.95" style="fill: rgb(64, 123, 255); opacity: 0.4; transform-origin: 183.915px 164.88px;" class="animable"></polygon></g><polygon points="174.64 159.87 156.83 159.87 156.44 158 174.25 158 174.64 159.87" style="fill: rgb(64, 123, 255); transform-origin: 165.54px 158.935px;" id="elq1lkmnpw4n" class="animable"></polygon><g id="elgdrs42ty70i"><polygon points="181.8 166.92 165.24 166.92 165.63 168.79 182.19 168.79 181.8 166.92" style="fill: rgb(64, 123, 255); opacity: 0.4; transform-origin: 173.715px 167.855px;" class="animable"></polygon></g><g id="elmuh7bqptih"><polygon points="176.78 163.95 164.62 163.95 165.01 165.81 177.17 165.81 176.78 163.95" style="fill: rgb(64, 123, 255); opacity: 0.4; transform-origin: 170.895px 164.88px;" class="animable"></polygon></g><g id="el3dqq45ci0oo"><polygon points="188.32 160.97 164 160.97 164.39 162.84 188.71 162.84 188.32 160.97" style="fill: rgb(64, 123, 255); opacity: 0.4; transform-origin: 176.355px 161.905px;" class="animable"></polygon></g><polygon points="165.96 109.53 146.34 109.53 145.95 107.67 165.57 107.67 165.96 109.53" style="fill: rgb(64, 123, 255); transform-origin: 155.955px 108.6px;" id="el5zd5bh0iowt" class="animable"></polygon><g id="elwfpnfzuukus"><polygon points="175.65 116.59 154.01 116.59 154.4 118.46 176.03 118.46 175.65 116.59" style="fill: rgb(64, 123, 255); opacity: 0.4; transform-origin: 165.02px 117.525px;" class="animable"></polygon></g><g id="eleadeekzjxnp"><polygon points="171.32 113.62 153.39 113.62 153.78 115.48 171.71 115.48 171.32 113.62" style="fill: rgb(64, 123, 255); opacity: 0.4; transform-origin: 162.55px 114.55px;" class="animable"></polygon></g><g id="el33lng412l09"><polygon points="172.51 110.64 152.77 110.64 153.16 112.51 172.9 112.51 172.51 110.64" style="fill: rgb(64, 123, 255); opacity: 0.4; transform-origin: 162.835px 111.575px;" class="animable"></polygon></g><polygon points="165.74 137.18 152.1 137.18 151.71 135.31 165.35 135.31 165.74 137.18" style="fill: rgb(64, 123, 255); transform-origin: 158.725px 136.245px;" id="elrsy193ev6qf" class="animable"></polygon><g id="el7l6wifmi5lh"><polygon points="187.16 144.23 160.51 144.23 160.9 146.1 187.54 146.1 187.16 144.23" style="fill: rgb(64, 123, 255); opacity: 0.4; transform-origin: 174.025px 145.165px;" class="animable"></polygon></g><g id="elyr0314ou6v"><polygon points="170.93 141.26 159.89 141.26 160.28 143.13 171.32 143.13 170.93 141.26" style="fill: rgb(64, 123, 255); opacity: 0.4; transform-origin: 165.605px 142.195px;" class="animable"></polygon></g><g id="elofve7y7u4h"><polygon points="182.91 141.26 171.87 141.26 172.26 143.13 183.3 143.13 182.91 141.26" style="fill: rgb(64, 123, 255); opacity: 0.4; transform-origin: 177.585px 142.195px;" class="animable"></polygon></g><g id="el3qip2wxg6up"><polygon points="183.59 138.28 159.27 138.28 159.66 140.15 183.97 140.15 183.59 138.28" style="fill: rgb(64, 123, 255); opacity: 0.4; transform-origin: 171.62px 139.215px;" class="animable"></polygon></g><g id="elv9bislimwnh"><polygon points="183.54 153.16 162.37 153.16 162.76 155.02 183.93 155.02 183.54 153.16" style="fill: rgb(64, 123, 255); opacity: 0.4; transform-origin: 173.15px 154.09px;" class="animable"></polygon></g><g id="elvyvybdi2hor"><polygon points="167.91 150.18 161.75 150.18 162.14 152.05 168.29 152.05 167.91 150.18" style="fill: rgb(64, 123, 255); opacity: 0.4; transform-origin: 165.02px 151.115px;" class="animable"></polygon></g><g id="elfktdfc6cgan"><polygon points="177.54 150.18 168.75 150.18 169.14 152.05 177.93 152.05 177.54 150.18" style="fill: rgb(64, 123, 255); opacity: 0.4; transform-origin: 173.34px 151.115px;" class="animable"></polygon></g><g id="el76ntfwncago"><polygon points="185.45 147.21 161.13 147.21 161.52 149.07 185.84 149.07 185.45 147.21" style="fill: rgb(64, 123, 255); opacity: 0.4; transform-origin: 173.485px 148.14px;" class="animable"></polygon></g><g id="elgn66nryboft"><polygon points="204.6 146.71 195.89 146.71 195.5 144.84 204.22 144.84 204.6 146.71" style="fill: rgb(64, 123, 255); opacity: 0.4; transform-origin: 200.05px 145.775px;" class="animable"></polygon></g><g id="elhuc6kjw45nr"><polygon points="219.1 146.71 205.68 146.71 205.29 144.84 218.71 144.84 219.1 146.71" style="fill: rgb(64, 123, 255); opacity: 0.4; transform-origin: 212.195px 145.775px;" class="animable"></polygon></g><g id="elfwp684kzgs9"><polygon points="224.8 149.69 196.51 149.69 196.12 147.82 224.41 147.82 224.8 149.69" style="fill: rgb(64, 123, 255); opacity: 0.4; transform-origin: 210.46px 148.755px;" class="animable"></polygon></g><g id="el8fqyu800wje"><polygon points="221.04 152.66 197.13 152.66 196.74 150.79 220.65 150.79 221.04 152.66" style="fill: rgb(64, 123, 255); opacity: 0.4; transform-origin: 208.89px 151.725px;" class="animable"></polygon></g><g id="elh0pm23hpved"><polygon points="231.75 134.88 204.66 134.88 205.05 136.74 232.14 136.74 231.75 134.88" style="fill: rgb(64, 123, 255); opacity: 0.4; transform-origin: 218.4px 135.81px;" class="animable"></polygon></g><g id="eli2p43f7kg3"><polygon points="226.49 131.9 204.04 131.9 204.43 133.77 226.87 133.77 226.49 131.9" style="fill: rgb(64, 123, 255); opacity: 0.4; transform-origin: 215.455px 132.835px;" class="animable"></polygon></g><polygon points="222.43 128.93 197.71 128.93 198.1 130.79 222.82 130.79 222.43 128.93" style="fill: rgb(64, 123, 255); transform-origin: 210.265px 129.86px;" id="elt05gicjt64r" class="animable"></polygon><g id="elnex8b0nqz2"><polygon points="232.97 164.56 199.61 164.56 200 166.43 233.36 166.43 232.97 164.56" style="fill: rgb(64, 123, 255); opacity: 0.4; transform-origin: 216.485px 165.495px;" class="animable"></polygon></g><g id="elvcdi4bsjgsg"><polygon points="212.81 161.59 198.99 161.59 199.38 163.45 213.2 163.45 212.81 161.59" style="fill: rgb(64, 123, 255); opacity: 0.4; transform-origin: 206.095px 162.52px;" class="animable"></polygon></g><g id="elgaopl2dnjjl"><polygon points="227.81 161.59 213.99 161.59 214.38 163.45 228.2 163.45 227.81 161.59" style="fill: rgb(64, 123, 255); opacity: 0.4; transform-origin: 221.095px 162.52px;" class="animable"></polygon></g><g id="elpntaziq7qo"><polygon points="228.81 158.61 198.37 158.61 198.76 160.48 229.2 160.48 228.81 158.61" style="fill: rgb(64, 123, 255); opacity: 0.4; transform-origin: 213.785px 159.545px;" class="animable"></polygon></g><g id="elhu9r66xplhi"><polygon points="227.97 173.48 201.47 173.48 201.86 175.35 228.36 175.35 227.97 173.48" style="fill: rgb(64, 123, 255); opacity: 0.4; transform-origin: 214.915px 174.415px;" class="animable"></polygon></g><g id="ele4welwcrt8a"><polygon points="208.56 170.51 200.85 170.51 201.24 172.38 208.95 172.38 208.56 170.51" style="fill: rgb(64, 123, 255); opacity: 0.4; transform-origin: 204.9px 171.445px;" class="animable"></polygon></g><g id="el61m9xr2e8m"><polygon points="220.62 170.51 209.62 170.51 210.01 172.38 221.01 172.38 220.62 170.51" style="fill: rgb(64, 123, 255); opacity: 0.4; transform-origin: 215.315px 171.445px;" class="animable"></polygon></g><g id="ele6zpd4db5ah"><polygon points="230.68 167.53 200.23 167.53 200.62 169.4 231.06 169.4 230.68 167.53" style="fill: rgb(64, 123, 255); opacity: 0.4; transform-origin: 215.645px 168.465px;" class="animable"></polygon></g><g id="elbtnq7uzool6"><polygon points="149.6 175.79 128.86 175.79 129.25 177.66 149.99 177.66 149.6 175.79" style="fill: rgb(64, 123, 255); opacity: 0.4; transform-origin: 139.425px 176.725px;" class="animable"></polygon></g><g id="elmmpmst60hch"><polygon points="143.47 172.82 128.24 172.82 128.63 174.68 143.85 174.68 143.47 172.82" style="fill: rgb(64, 123, 255); opacity: 0.4; transform-origin: 136.045px 173.75px;" class="animable"></polygon></g><g id="el2iijvyn4nnu"><polygon points="159.76 172.82 144.54 172.82 144.93 174.68 160.16 174.68 159.76 172.82" style="fill: rgb(64, 123, 255); opacity: 0.4; transform-origin: 152.35px 173.75px;" class="animable"></polygon></g><g id="elucohhcmfxvp"><polygon points="158.07 169.84 127.62 169.84 128.01 171.71 158.45 171.71 158.07 169.84" style="fill: rgb(64, 123, 255); opacity: 0.4; transform-origin: 143.035px 170.775px;" class="animable"></polygon></g><polygon points="390.95 231.66 378.11 231.66 379.61 251.09 389.45 251.09 390.95 231.66" style="fill: rgb(64, 123, 255); transform-origin: 384.53px 241.375px;" id="elcvykpgkc2q5" class="animable"></polygon><g id="elkrq63lf8zb8"><polygon points="390.95 231.66 378.11 231.66 379.61 251.09 389.45 251.09 390.95 231.66" style="fill: rgb(255, 255, 255); opacity: 0.4; transform-origin: 384.53px 241.375px;" class="animable"></polygon></g><polygon points="111.13 218.17 129.59 218.17 123.29 251.09 104.83 251.09 111.13 218.17" style="fill: rgb(38, 50, 56); transform-origin: 117.21px 234.63px;" id="elxkzwy1kefk" class="animable"></polygon><polygon points="134.64 209.35 108.57 209.35 115.87 251.09 141.94 251.09 134.64 209.35" style="fill: rgb(64, 123, 255); transform-origin: 125.255px 230.22px;" id="el4o3zlreohc8" class="animable"></polygon><polygon points="107.03 209.35 108.57 209.35 115.87 251.09 114.33 251.09 107.03 209.35" style="fill: rgb(64, 123, 255); transform-origin: 111.45px 230.22px;" id="el5py5tlg9pmw" class="animable"></polygon><g id="elei7pf6fmqfi"><polygon points="107.03 209.35 108.57 209.35 115.87 251.09 114.33 251.09 107.03 209.35" style="opacity: 0.3; transform-origin: 111.45px 230.22px;" class="animable"></polygon></g><polygon points="119.62 246.62 113.88 213.81 130.9 213.81 136.63 246.62 119.62 246.62" style="fill: rgb(255, 255, 255); transform-origin: 125.255px 230.215px;" id="eluk9h7caypi" class="animable"></polygon><g id="elcbc27upzeg9"><polygon points="135.82 246.62 130.09 213.81 130.9 213.81 136.63 246.62 135.82 246.62" style="fill: rgb(64, 123, 255); opacity: 0.6; transform-origin: 133.36px 230.215px;" class="animable"></polygon></g></g><g id="freepik--Character--inject-76" class="animable" style="transform-origin: 282.422px 272.481px;"><path d="M263.77,156c.37.8.25,1.65-.28,1.89s-1.25-.21-1.62-1-.24-1.65.28-1.89S263.4,155.16,263.77,156Z" style="fill: rgb(38, 50, 56); transform-origin: 262.821px 156.443px;" id="elb8n4mm9268l" class="animable"></path><path d="M264.09,157.58s.32,5.46-.66,8.62c2,.67,4.16-1,4.16-1Z" style="fill: rgb(255, 86, 82); transform-origin: 265.51px 161.969px;" id="elpni08q7imk" class="animable"></path><path d="M263.87,149.39a.53.53,0,0,1-.3.12,4.12,4.12,0,0,0-3.29,1.79.52.52,0,1,1-.9-.52,5.14,5.14,0,0,1,4.13-2.31.52.52,0,0,1,.36.92Z" style="fill: rgb(38, 50, 56); transform-origin: 261.68px 150.022px;" id="el2pa9dyddzue" class="animable"></path><path d="M293.22,154.76c3.09,10.7,6.54,19,10.75,23.74,0,0,.08,8.41-14.25,12.41-15.76,4.4-9.72-5.72-9.72-5.72,8-4.45,7.24-11.17,1.22-13.73Z" style="fill: rgb(255, 139, 123); transform-origin: 291.416px 173.389px;" id="eldb66tdmjywo" class="animable"></path><path d="M307.31,176.45c-.28-3.91-.65-8.37-3.06-8.49-2.66-.12-18.06,6.76-21.35,11.61s3.14,9.6,3.14,9.6Z" style="fill: rgb(38, 50, 56); transform-origin: 294.636px 178.564px;" id="elxg4y8wg3h6" class="animable"></path><path d="M275.79,237l-13.3-.44.24,11.14s11.6-1.2,12.11-4.25Z" style="fill: rgb(255, 139, 123); transform-origin: 269.14px 242.13px;" id="el1yah3fet5jk" class="animable"></path><polygon points="255.46 242.03 254.06 247.73 262.73 247.71 262.49 236.57 255.46 242.03" style="fill: rgb(255, 139, 123); transform-origin: 258.395px 242.15px;" id="el6lm6w4e28ym" class="animable"></polygon><path d="M329.17,190.71l-.28,2.86c-.09.92-.21,1.82-.33,2.73-.23,1.81-.52,3.62-.83,5.42-.6,3.61-1.38,7.2-2.28,10.81a107.83,107.83,0,0,1-3.32,10.87c-.69,1.83-1.41,3.66-2.27,5.52a45.73,45.73,0,0,1-3,5.65c-.27.47-.61,1-.94,1.44s-.65,1-1,1.46-.72,1-1.18,1.47l-.65.74a10.06,10.06,0,0,1-.74.78,22.81,22.81,0,0,1-6.93,4.65,41,41,0,0,1-12.43,3.15c-1.95.23-3.88.32-5.77.37s-3.78,0-5.64-.1-3.7-.26-5.53-.48-3.61-.51-5.55-.9l.32-10.45a160.33,160.33,0,0,0,18.9-4.5,41.44,41.44,0,0,0,4.06-1.56,18.63,18.63,0,0,0,3.22-1.75,4.48,4.48,0,0,0,1.46-1.42l.29-.46a6.53,6.53,0,0,0,.37-.61,7.56,7.56,0,0,0,.39-.71c.13-.26.27-.5.4-.79a52.59,52.59,0,0,0,2.89-7.94c.82-2.94,1.59-6,2.21-9.17s1.22-6.37,1.77-9.6l.76-4.86.69-4.73Z" style="fill: rgb(64, 123, 255); transform-origin: 299.835px 218.625px;" id="elx32hdj12pcb" class="animable"></path><g id="elyotiviw1jaj"><path d="M329.17,190.71l-.28,2.86c-.09.92-.21,1.82-.33,2.73-.23,1.81-.52,3.62-.83,5.42-.6,3.61-1.38,7.2-2.28,10.81a107.83,107.83,0,0,1-3.32,10.87c-.69,1.83-1.41,3.66-2.27,5.52a45.73,45.73,0,0,1-3,5.65c-.27.47-.61,1-.94,1.44s-.65,1-1,1.46-.72,1-1.18,1.47l-.65.74a10.06,10.06,0,0,1-.74.78,22.81,22.81,0,0,1-6.93,4.65,41,41,0,0,1-12.43,3.15c-1.95.23-3.88.32-5.77.37s-3.78,0-5.64-.1-3.7-.26-5.53-.48-3.61-.51-5.55-.9l.32-10.45a160.33,160.33,0,0,0,18.9-4.5,41.44,41.44,0,0,0,4.06-1.56,18.63,18.63,0,0,0,3.22-1.75,4.48,4.48,0,0,0,1.46-1.42l.29-.46a6.53,6.53,0,0,0,.37-.61,7.56,7.56,0,0,0,.39-.71c.13-.26.27-.5.4-.79a52.59,52.59,0,0,0,2.89-7.94c.82-2.94,1.59-6,2.21-9.17s1.22-6.37,1.77-9.6l.76-4.86.69-4.73Z" style="opacity: 0.2; transform-origin: 299.835px 218.625px;" class="animable"></path></g><path d="M270.12,204a326.55,326.55,0,0,1,8.33,65.14H337c.32-7.23-.9-48-6.79-77.45a20.4,20.4,0,0,0-24.4-16l-.28.07c-7.31,1.66-17.8,4.34-24,6.69l-.25.1A18.33,18.33,0,0,0,270.12,204Z" style="fill: rgb(64, 123, 255); transform-origin: 303.32px 222.177px;" id="el02gitff9q6yb" class="animable"></path><g id="elnv0eikapqmk"><path d="M273.93,222.7c.46,2.81.93,5.79,1.36,8.91,4.79-5,6.31-20.32,6.31-20.32Z" style="opacity: 0.2; transform-origin: 277.765px 221.45px;" class="animable"></path></g><path d="M225.29,237.73,212,236.49l-.44,11.13A12.48,12.48,0,0,0,224,244.11Z" style="fill: rgb(255, 139, 123); transform-origin: 218.425px 242.28px;" id="elcd6lxp7spc" class="animable"></path><polygon points="205.68 239.77 201.42 247.42 211.6 247.62 212.04 236.49 205.68 239.77" style="fill: rgb(255, 139, 123); transform-origin: 206.73px 242.055px;" id="eltosjx5a35yd" class="animable"></polygon><path d="M292.09,198.87c-.92,1.75-1.74,3.3-2.66,4.9s-1.8,3.16-2.75,4.71c-1.88,3.12-3.83,6.18-5.89,9.21a153.64,153.64,0,0,1-13.71,17.64,75.7,75.7,0,0,1-8.69,8.27c-.39.33-.85.65-1.28,1s-.81.63-1.45,1-1.18.74-1.76,1.06-1.18.61-1.77.87a31.42,31.42,0,0,1-6.88,2.09,43.44,43.44,0,0,1-12.52.28,52,52,0,0,1-5.8-1q-1.43-.33-2.82-.75c-1-.28-1.81-.59-2.88-1l1.65-10.32c6.28-.85,13.07-1.94,17.75-4.06a12.83,12.83,0,0,0,2.91-1.67,6.81,6.81,0,0,0,1-.84c.07-.09.38-.36.61-.58s.5-.43.75-.69a71.37,71.37,0,0,0,6-6.75,195.49,195.49,0,0,0,11.27-16.16c1.8-2.83,3.55-5.71,5.3-8.6l2.58-4.34,2.49-4.27Z" style="fill: rgb(64, 123, 255); transform-origin: 256.66px 219.547px;" id="elxirxntwjoq" class="animable"></path><polygon points="276.02 407.6 265.08 407.6 259.57 382.25 270.52 382.25 276.02 407.6" style="fill: rgb(255, 139, 123); transform-origin: 267.795px 394.925px;" id="elu20tt01pyz9" class="animable"></polygon><path d="M264.47,405.26h12.3a1,1,0,0,1,.93.74l2.16,9.74a1.6,1.6,0,0,1-1.6,1.94c-4.29-.07-6.38-.32-11.79-.32-3.33,0-7.6.34-12.19.34s-5.2-4.54-3.32-4.95c8.44-1.85,9-4.39,11.73-6.82A2.64,2.64,0,0,1,264.47,405.26Z" style="fill: rgb(38, 50, 56); transform-origin: 264.931px 411.48px;" id="elqclj3cwyi5" class="animable"></path><g id="el04rr9czlqigy"><g style="opacity: 0.2; transform-origin: 266.47px 389.28px;" class="animable"><polygon points="270.53 382.26 259.57 382.26 262.63 396.3 273.37 395.33 270.53 382.26" id="elfh0y6rtvu3b" class="animable" style="transform-origin: 266.47px 389.28px;"></polygon></g></g><path d="M289.71,141.9c4,10.12,6.78,15.85,4.14,23.2-4,11.05-18.19,12.17-25.09,3.43-6.2-7.87-11.62-23.1-3.79-31.47A14.81,14.81,0,0,1,289.71,141.9Z" style="fill: rgb(255, 139, 123); transform-origin: 277.984px 153.318px;" id="elkygzmodriq" class="animable"></path><path d="M270.49,157.06c-1.64,2.2-2.9,3.87-2.9,3.87s-3.37-8.37-2.08-12.21c-1.64-3.25-4.95,1.54-6.2-4.79s4.16-13.13,6.2-14.54a7.41,7.41,0,0,1,.28,2.27,28,28,0,0,1,19.6-6.19,6.77,6.77,0,0,0-1.1,2.94s11.87,2,14.57,8.72a12.83,12.83,0,0,0-3-1,14.49,14.49,0,0,1,2.4,10.72,110.21,110.21,0,0,0-1.34,16.53c.11,2.84-7.68,8.27-12.43,2.47S270.49,157.06,270.49,157.06Z" style="fill: rgb(38, 50, 56); transform-origin: 278.992px 146.911px;" id="el3td0cyso5pj" class="animable"></path><path d="M275.44,154.88a11.07,11.07,0,0,1-.5,7.1c-1.27,3-3.88,2.28-5.17-.34-1.17-2.35-1.92-6.71.15-8.8S274.66,152.05,275.44,154.88Z" style="fill: rgb(255, 139, 123); transform-origin: 272.212px 157.873px;" id="ela0z4t0q3r8w" class="animable"></path><path d="M296,269.1s-50.84,18.44-52.33,42.83c-2.76,44.93,15.61,80.5,15.61,80.5l16.84-1.8s-3-14.46-5.23-55.16c-2.81-51.15,84,1.2,66.12-66.37Z" style="fill: rgb(64, 123, 255); transform-origin: 291.413px 330.765px;" id="el1szpv3ptovkh" class="animable"></path><g id="elwrw3t3nlzoc"><path d="M296,269.1s-50.84,18.44-52.33,42.83c-2.76,44.93,15.61,80.5,15.61,80.5l16.84-1.8s-3-14.46-5.23-55.16c-2.81-51.15,84,1.2,66.12-66.37Z" style="fill: rgb(255, 255, 255); opacity: 0.5; transform-origin: 291.413px 330.765px;" class="animable"></path></g><path d="M254.62,386.23c-.08,0,2.68,7.48,2.68,7.48l21-2.06-1.05-6.8Z" style="fill: rgb(64, 123, 255); transform-origin: 266.459px 389.28px;" id="el3hsa28exp51" class="animable"></path><polygon points="228.73 408.85 217.78 408.85 214.58 383.49 225.53 383.49 228.73 408.85" style="fill: rgb(255, 139, 123); transform-origin: 221.655px 396.17px;" id="ellperajx6pun" class="animable"></polygon><path d="M217.7,405.25h12a.94.94,0,0,1,.93.74l2.18,9.73a1.59,1.59,0,0,1-1.57,2c-4.31-.07-10.55-.31-16-.3-6.34,0-7.55.35-15,.36-4.5,0-5.75-4.53-3.87-5,8.56-1.88,11.3-2.09,18.69-6.66A5,5,0,0,1,217.7,405.25Z" style="fill: rgb(38, 50, 56); transform-origin: 214.195px 411.515px;" id="elynzdwhydte9" class="animable"></path><g id="elj7feghmgof"><polygon points="214.59 383.5 216.33 397.31 227.19 396.57 225.54 383.5 214.59 383.5" style="opacity: 0.2; transform-origin: 220.89px 390.405px;" class="animable"></polygon></g><path d="M278.45,269.1s-83.3,7.39-82.4,49.23c.93,43.52,17.19,72.87,17.19,72.87H229.5s-3.08-22.58-2.53-65.42c.16-12.83,26.1-17.07,51.42-18.57,21.88-1.3,42.36-13.77,50.86-34L331,269.1Z" style="fill: rgb(64, 123, 255); transform-origin: 263.521px 330.15px;" id="el21jvefoyzga" class="animable"></path><g id="elob9s1jp1xlk"><path d="M278.45,269.1s-83.3,7.39-82.4,49.23c.93,43.52,17.19,72.87,17.19,72.87H229.5s-3.08-22.58-2.53-65.42c.16-12.83,26.1-17.07,51.42-18.57,21.88-1.3,42.36-13.77,50.86-34L331,269.1Z" style="fill: rgb(255, 255, 255); opacity: 0.5; transform-origin: 263.521px 330.15px;" class="animable"></path></g><path d="M209.43,386.83c-.07,0,2.79,7.52,2.79,7.52l19.64-1.41-1.15-6.8Z" style="fill: rgb(64, 123, 255); transform-origin: 220.644px 390.245px;" id="ellugrn6pft3h" class="animable"></path><path d="M300.32,222.08l-10.57,40.73a127.1,127.1,0,0,0-4.06,31.95v18.93c0,4.78,3.52,8.66,7.87,8.66h54.18c4.35,0,7.87-3.88,7.87-8.66V294.76a127.11,127.11,0,0,1,4.07-31.95l9.33-36c1.44-5.53-2.34-11-7.57-11H307.88A8,8,0,0,0,300.32,222.08Z" style="fill: rgb(38, 50, 56); transform-origin: 327.504px 269.08px;" id="el7pjtpdhpr3r" class="animable"></path><path d="M232.93,302.63l1.77,10.1c.94,5.31,5.61,9.62,10.44,9.62h60.23c4.83,0,8-4.31,7.06-9.62l-1.77-10.1c-1.07-6.05-6.38-10.95-11.88-10.95H241C235.46,291.68,231.87,296.58,232.93,302.63Z" style="fill: rgb(38, 50, 56); transform-origin: 272.67px 307.015px;" id="elhdcyo9a2ebv" class="animable"></path><polygon points="311.17 332.49 279.62 332.49 276.54 322.35 314.25 322.35 311.17 332.49" style="fill: rgb(64, 123, 255); transform-origin: 295.395px 327.42px;" id="elpx0nt6ys6ue" class="animable"></polygon><rect x="289.76" y="332.49" width="11.27" height="75.41" style="fill: rgb(64, 123, 255); transform-origin: 295.395px 370.195px;" id="el7p2jsl376w2" class="animable"></rect><g id="eljbt031sfqeb"><polygon points="301.03 407.9 289.76 407.9 289.76 334.3 301.03 335.45 301.03 407.9" style="fill: rgb(255, 255, 255); opacity: 0.7; transform-origin: 295.395px 371.1px;" class="animable"></polygon></g><g id="eljetc4azo7bj"><polygon points="298.28 407.9 295.59 407.9 295.59 334.89 298.28 335.17 298.28 407.9" style="fill: rgb(255, 255, 255); opacity: 0.7; transform-origin: 296.935px 371.395px;" class="animable"></polygon></g><path d="M321.31,419.56H269.47a1.44,1.44,0,0,1-.84-2.6l8.22-6a23.08,23.08,0,0,1,13.62-4.46h9.85a23.07,23.07,0,0,1,13.61,4.46l8.23,6A1.44,1.44,0,0,1,321.31,419.56Z" style="fill: rgb(64, 123, 255); transform-origin: 295.395px 413.03px;" id="elk3pdkjieso" class="animable"></path></g><defs>     <filter id="active" height="200%">         <feMorphology in="SourceAlpha" result="DILATED" operator="dilate" radius="2"></feMorphology>                <feFlood flood-color="#32DFEC" flood-opacity="1" result="PINK"></feFlood>        <feComposite in="PINK" in2="DILATED" operator="in" result="OUTLINE"></feComposite>        <feMerge>            <feMergeNode in="OUTLINE"></feMergeNode>            <feMergeNode in="SourceGraphic"></feMergeNode>        </feMerge>    </filter>    <filter id="hover" height="200%">        <feMorphology in="SourceAlpha" result="DILATED" operator="dilate" radius="2"></feMorphology>                <feFlood flood-color="#ff0000" flood-opacity="0.5" result="PINK"></feFlood>        <feComposite in="PINK" in2="DILATED" operator="in" result="OUTLINE"></feComposite>        <feMerge>            <feMergeNode in="OUTLINE"></feMergeNode>            <feMergeNode in="SourceGraphic"></feMergeNode>        </feMerge>            <feColorMatrix type="matrix" values="0   0   0   0   0                0   1   0   0   0                0   0   0   0   0                0   0   0   1   0 "></feColorMatrix>    </filter></defs></svg>
-            </div>
-            <div class="animation-about" style="text-align: left; line-height: 1.8;">
-              <p>
-                Greetings from the enchanting city of <strong>Paris</strong>! I am a passionate individual on a journey of self-discovery and continuous learning. Currently immersed in the beauty of the French language, I find joy in unraveling the intricacies of living in this vibrant city.
-              </p>
-              <p>
-                My heart beats to the rhythm of technology, particularly in the realm of <strong>Laravel &amp; PHP development</strong>. A devoted enthusiast, I've not only honed my skills but also contributed to the community by volunteering at conferences and sharing insights at meetups. The thrill of exchanging knowledge on various subjects ignites my spirit; I am always eager to engage in conversations ranging from coding to the wonders of the world.
-              </p>
-              <p>
-                <strong>Music</strong> has been an integral part of my life since college, where drumming was my muse. The pandemic nudged me to explore new melodies, leading me to pick up the guitar with renewed enthusiasm. Every strum is a step into uncharted territory, &amp; I relish the challenge of this musical evolution.
-              </p>
-              <p>
-                Beyond the digital realm &amp; musical notes, I crave adventure. <strong>Traveling</strong> allows me to capture the essence of diverse cultures through my lens. Armed with my phone, I seek stories in every corner of the globe, freezing moments in time.
-              </p>
-              <p>
-                In essence, I am a melody of passions &hyphen; from coding to creating music, and exploring the world through a photographer's lens. Join me in this symphony of life as I continue to learn, share, and embrace the myriad experiences that come my way.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-4">
-            <img src="assets/img/profile-img.jpeg" class="img-fluid" alt="">
-          </div>
-          <div class="col-lg-8 pt-4 pt-lg-0 content">
-            <h3>Senior Software Engineer</h3>
-            <p class="fst-italic">
-              I offer 8+ years of experience with combined expertise in Node JS, PHP/Laravel, Golang, RDBMS, AWS(EC2, SNS, S3, Cloudwatch), Linux, REST APIs, Redis, etc. I have worked in multiple domains and worked on multiple projects in freelancing as well.
-            </p>
-            <div class="row">
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>jazeabby.in</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Nanterre, &Icirc;le-de-france, France</span></li>
-                </ul>
-              </div>
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>29</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>hello@jazeabby.in</span></li>
-                </ul>
-              </div>
-            </div>
-            <!-- <p>
-              Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis.
-              Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque. Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.
-            </p> -->
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End About Section -->
-
-    <!-- ======= Facts Section ======= - ->
-    <section id="facts" class="facts">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Facts</h2>
-          <p>While KPIs can be different in different organisations, raw numbers is something is universal to display</p>
-        </div>
-
-        <div class="row">
-
-          <div class="col-lg-4 col-md-6 mt-5 mt-lg-0">
-            <div class="count-box">
-              <i class="bi bi-award"></i>
-              <span data-purecounter-start="0" data-purecounter-end="7" data-purecounter-duration="1" class="purecounter"></span>
-              <p>+ Years of Experience</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6">
-            <div class="count-box">
-              <i class="bi bi-emoji-smile"></i>
-              <span data-purecounter-start="0" data-purecounter-end="22" data-purecounter-duration="1" class="purecounter"></span>
-              <p>+ Happy Clients</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 mt-5 mt-md-0">
-            <div class="count-box">
-              <i class="bi bi-journal-richtext"></i>
-              <span data-purecounter-start="0" data-purecounter-end="30" data-purecounter-duration="1" class="purecounter"></span>
-              <p>+ Projects</p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End Facts Section -->
-
-    <!-- ======= Skills Section ======= -->
-    <section id="skills" class="skills section-bg">
-      <div class="container" data-aos="fade-up">
-    
-        <div class="section-title">
-          <h2>I'm pretty good at these</h2>
-          <p>Some of the skills I have acquired during my experience.</p>
-        </div>
-        <style>
-          .skills-btn-group {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 12px;
-            margin-bottom: 1rem;
-            .btn {
-              display: flex;
-              align-items: center;
-              gap: 8px;
-              min-width: 120px;
-              margin-bottom: 8px;
-              font-size: 1rem;
-              padding: 6px 16px;
-              transition: background 0.2s, color 0.2s;
-              .skill-icon {
-                width: 28px;
-                height: 28px;
-                display: inline-block;
-                vertical-align: middle;
-              }
-            }
-            .btn:hover {
-              background: #222;
-              color: #f0f0f0;
-              /* border-color: #007bff; */
-              .skill-icon {
-                filter: brightness(0) invert(1);
-              }
-            }
-          }
-        </style>
-        <div class="row skills-content">
-          <div class="col-lg-12">
-            <h4><i class="fa-fw fa-solid fa-layer-group"></i> Backend</h4>
-            <div class="skills-btn-group">
-              <button type="button" class="btn btn-outline-dark">
-                <img src="assets/icons/php.svg" alt="PHP" class="skill-icon" /> PHP
-              </button>
-              <button type="button" class="btn btn-outline-dark">
-                <img src="assets/icons/nodejs.svg" alt="Node.js" class="skill-icon" /> Node.js
-              </button>
-              <button type="button" class="btn btn-outline-dark">
-                <img src="assets/icons/go.svg" alt="Golang" class="skill-icon" /> Golang
-              </button>
-              <button type="button" class="btn btn-outline-dark">
-                <img src="assets/icons/python.svg" alt="Python" class="skill-icon" /> Python
-              </button>
-            </div>
-            <hr>
-            <h4><i class="fa-fw fa-brands fa-aws"></i> AWS and Cloud</h4>
-            <div class="skills-btn-group">
-              <button type="button" class="btn btn-outline-dark">
-                <img src="assets/icons/amazonec2.svg" alt="EC2" class="skill-icon" /> EC2
-              </button>
-              <button type="button" class="btn btn-outline-dark">
-                <img src="assets/icons/amazonrds.svg" alt="RDS" class="skill-icon" /> RDS
-              </button>
-              <button type="button" class="btn btn-outline-dark">
-                <img src="assets/icons/amazons3.svg" alt="S3" class="skill-icon" /> S3
-              </button>
-              <button type="button" class="btn btn-outline-dark">
-                <img src="assets/icons/amazonelb.svg" alt="ELB" class="skill-icon" /> ELB
-              </button>
-              <button type="button" class="btn btn-outline-dark">
-                <img src="assets/icons/amazonelb.svg" alt="ELB" class="skill-icon" /> ELB
-              </button>
-              <button type="button" class="btn btn-outline-dark">
-                <img src="assets/icons/amazonses.svg" alt="SES" class="skill-icon" /> SES
-              </button>
-              <button type="button" class="btn btn-outline-dark">
-                <img src="assets/icons/amazondynamodb.svg" alt="DynamoDB" class="skill-icon" /> DynamoDB
-              </button>
-              <button type="button" class="btn btn-outline-dark">
-                <img src="assets/icons/amazonsqs.svg" alt="SQS" class="skill-icon" /> SQS
-              </button>
-              <button type="button" class="btn btn-outline-dark">
-                <img src="assets/icons/amazonlambda.svg" alt="Lambda" class="skill-icon" /> Lambda
-              </button>
-              <button type="button" class="btn btn-outline-dark">
-                <img src="assets/icons/amazoncloudwatch.svg" alt="CloudWatch" class="skill-icon" /> CloudWatch
-              </button>
-              <button type="button" class="btn btn-outline-dark">
-                <img src="assets/icons/amazoniam.svg" alt="IAM" class="skill-icon" /> IAM
-              </button>
-              <button type="button" class="btn btn-outline-dark">
-                <img src="assets/icons/googlecloud.svg" alt="GCP" class="skill-icon" /> GCP
-              </button>
-            </div>
-            <hr>
-            <h4><i class="fa-fw fa-solid fa-puzzle-piece"></i> Frameworks</h4>
-            <div class="skills-btn-group">
-              <button type="button" class="btn btn-outline-dark">
-                <img src="assets/icons/express.svg" alt="Express" class="skill-icon" /> Express
-              </button>
-              <button type="button" class="btn btn-outline-dark">
-                <img src="assets/icons/nextjs.svg" alt="NextJS" class="skill-icon" /> NextJS
-              </button>
-              <button type="button" class="btn btn-outline-dark">
-                <img src="assets/icons/nestjs.svg" alt="NestJS" class="skill-icon" /> NestJS
-              </button>
-              <button type="button" class="btn btn-outline-dark">
-                <img src="assets/icons/flask.svg" alt="Flask" class="skill-icon" /> Flask
-              </button>
-              <button type="button" class="btn btn-outline-dark">
-                <img src="assets/icons/laravel.svg" alt="Laravel" class="skill-icon" /> Laravel
-              </button>
-              <button type="button" class="btn btn-outline-dark">
-                <img src="assets/icons/symfony.svg" alt="Symfony" class="skill-icon" /> Symfony
-              </button>
-              <button type="button" class="btn btn-outline-dark">
-                <img src="assets/icons/codeigniter.svg" alt="CodeIgniter" class="skill-icon" /> CodeIgniter
-              </button>
-            </div>
-            <hr>
-            <h4><i class="fa-fw fa-brands fa-js"></i> Frontend</h4>
-            <div class="skills-btn-group">
-              <button type="button" class="btn btn-outline-dark">
-                <img src="assets/icons/typescript.svg" alt="TypeScript" class="skill-icon" /> TypeScript
-              </button>
-              <button type="button" class="btn btn-outline-dark">
-                <img src="assets/icons/javascript.svg" alt="JavaScript" class="skill-icon" /> JavaScript
-              </button>
-              <button type="button" class="btn btn-outline-dark">
-                <img src="assets/icons/react.svg" alt="React" class="skill-icon" /> React
-              </button>
-              <button type="button" class="btn btn-outline-dark">
-                <img src="assets/icons/vuejs.svg" alt="Vue.js" class="skill-icon" /> Vue.js
-              </button>
-              <button type="button" class="btn btn-outline-dark">
-                <img src="assets/icons/bootstrap.svg" alt="Bootstrap" class="skill-icon" /> Bootstrap
-              </button>
-              <button type="button" class="btn btn-outline-dark">
-                <img src="assets/icons/tailwindcss.svg" alt="Tailwind CSS" class="skill-icon" /> Tailwind CSS
-              </button>
-            </div>
-          </div>
-                    <!-- ...existing code... -->
-          <div class="col-lg-12">
-            <h4><i class="fa-fw fa fa-database"></i> Databases</h4>
-            <div class="skills-btn-group">
-              <button type="button" class="btn btn-outline-dark">
-                <img src="assets/icons/mysql.svg" alt="MySQL" class="skill-icon" /> MySQL
-              </button>
-              <button type="button" class="btn btn-outline-dark">
-                <img src="assets/icons/postgresql.svg" alt="PostgreSQL" class="skill-icon" /> PostgreSQL
-              </button>
-              <button type="button" class="btn btn-outline-dark">
-                <img src="assets/icons/mariadb.svg" alt="MariaDB" class="skill-icon" /> MariaDB
-              </button>
-              <button type="button" class="btn btn-outline-dark">
-                <img src="assets/icons/sqlite.svg" alt="SQLite" class="skill-icon" /> SQLite
-              </button>
-              <button type="button" class="btn btn-outline-dark">
-                <img src="assets/icons/mongodb.svg" alt="MongoDB" class="skill-icon" /> MongoDB
-              </button>
-              <button type="button" class="btn btn-outline-dark">
-                <img src="assets/icons/redis.svg" alt="Redis" class="skill-icon" /> Redis
-              </button>
-            </div>
-            <hr>
-            <h4><i class="fa-fw fa fa-robot"></i> DevOps and Automation</h4>
-            <div class="skills-btn-group">
-              <button type="button" class="btn btn-outline-dark">
-                <img src="assets/icons/jenkins.svg" alt="Jenkins" class="skill-icon" /> Jenkins
-              </button>
-              <button type="button" class="btn btn-outline-dark">
-                <img src="assets/icons/githubactions.svg" alt="GitHub Actions" class="skill-icon" /> GitHub Actions
-              </button>
-              <button type="button" class="btn btn-outline-dark">
-                <img src="assets/icons/gitlab.svg" alt="GitLab CI" class="skill-icon" /> GitLab CI
-              </button>
-              <button type="button" class="btn btn-outline-dark">
-                <img src="assets/icons/docker.svg" alt="Docker" class="skill-icon" /> Docker
-              </button>
-              <button type="button" class="btn btn-outline-dark">
-                <img src="assets/icons/kubernetes.svg" alt="Kubernetes" class="skill-icon" /> Kubernetes
-              </button>
-              <button type="button" class="btn btn-outline-dark">
-                <img src="assets/icons/grafana.svg" alt="Grafana" class="skill-icon" /> Grafana
-              </button>
-            </div>
-            <hr>
-            <h4><i class="fa-fw fa-solid fa-screwdriver-wrench"></i> Tools and OS</h4>
-            <div class="skills-btn-group">
-              <button type="button" class="btn btn-outline-dark">
-                <img src="assets/icons/git.svg" alt="Git" class="skill-icon" /> Git
-              </button>
-              <button type="button" class="btn btn-outline-dark">
-                <img src="assets/icons/github.svg" alt="Github" class="skill-icon" /> Github
-              </button>
-              <button type="button" class="btn btn-outline-dark">
-                <img src="assets/icons/gitlab.svg" alt="Gitlab" class="skill-icon" /> Gitlab
-              </button>
-              <button type="button" class="btn btn-outline-dark">
-                <img src="assets/icons/bitbucket.svg" alt="Bitbucket" class="skill-icon" /> Bitbucket
-              </button>
-              <button type="button" class="btn btn-outline-dark">
-                <img src="assets/icons/slack.svg" alt="Slack" class="skill-icon" /> Slack
-              </button>
-              <button type="button" class="btn btn-outline-dark">
-                <img src="assets/icons/jira.svg" alt="JIRA" class="skill-icon" /> JIRA
-              </button>
-              <button type="button" class="btn btn-outline-dark">
-                <img src="assets/icons/notion.svg" alt="Notion" class="skill-icon" /> Notion
-              </button>
-              <button type="button" class="btn btn-outline-dark">
-                <img src="assets/icons/confluence.svg" alt="Confluence" class="skill-icon" /> Confluence
-              </button>
-              <button type="button" class="btn btn-outline-dark">
-                <img src="assets/icons/trello.svg" alt="Trello" class="skill-icon" /> Trello
-              </button>
-              <button type="button" class="btn btn-outline-dark">
-                <img src="assets/icons/nginx.svg" alt="Nginx" class="skill-icon" /> Nginx
-              </button>
-              <button type="button" class="btn btn-outline-dark">
-                <img src="assets/icons/linux.svg" alt="Linux" class="skill-icon" /> Linux
-              </button>
-              <button type="button" class="btn btn-outline-dark">
-                <img src="assets/icons/macos.svg" alt="Mac" class="skill-icon" /> Mac
-              </button>
-            </div>
-          </div>
-          <!-- ...existing code... -->
+    <!-- Hero -->
+    <section id="hero" class="max-w-[1280px] mx-auto px-margin-mobile md:px-margin-desktop py-xl md:py-24 relative overflow-hidden">
+      <div class="absolute top-0 right-0 w-96 h-96 bg-secondary/5 rounded-full blur-3xl -z-10 pointer-events-none"></div>
+      <div class="max-w-4xl">
+        <h1 class="font-display-lg-mobile text-display-lg-mobile md:font-display-lg md:text-display-lg text-on-surface mb-sm">
+          Abhishek Jain
+        </h1>
+        <p class="font-headline-sm text-headline-sm text-on-surface-variant mb-sm font-light">
+          Senior Software Engineer — Building Systems at Scale.
+        </p>
+        <p class="font-body-md text-body-md text-on-surface-variant mb-lg">
+          I'm <span id="hero-typed" class="text-secondary font-medium" data-typed-items="Backend Engineer,Web Enthusiast,Freelancer,Drummer">Backend Engineer</span>
+        </p>
+        <div class="flex gap-md flex-wrap">
+          <a href="https://www.linkedin.com/in/jazeabby" target="_blank" rel="noopener noreferrer" class="font-label-sm text-label-sm text-on-surface-variant hover:text-secondary transition-colors">LinkedIn</a>
+          <a href="https://www.twitter.com/jazeabby" target="_blank" rel="noopener noreferrer" class="font-label-sm text-label-sm text-on-surface-variant hover:text-secondary transition-colors">Twitter</a>
+          <a href="https://jazeabby.medium.com" target="_blank" rel="noopener noreferrer" class="font-label-sm text-label-sm text-on-surface-variant hover:text-secondary transition-colors">Medium</a>
+          <a href="https://github.com/jazeabby" target="_blank" rel="noopener noreferrer" class="font-label-sm text-label-sm text-on-surface-variant hover:text-secondary transition-colors">GitHub</a>
         </div>
       </div>
     </section>
-    <!-- ...existing code... --><!-- End Skills Section -->
 
-    <!-- ======= Resume Section ======= -->
-    <section id="resume" class="resume">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>My journey</h2>
-          <p></p>
+    <!-- Philosophy / About -->
+    <section class="border-t border-outline-variant/30 pt-xl pb-xl" id="philosophy">
+      <div class="max-w-[1280px] mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-12 gap-gutter">
+        <div class="md:col-span-4">
+          <h2 class="font-headline-lg text-headline-lg text-on-surface">The Philosophy</h2>
         </div>
+        <div class="md:col-span-8 flex flex-col gap-lg">
+          <p class="font-body-lg text-body-lg text-on-surface-variant max-w-3xl">
+            Greetings from the enchanting city of <strong class="text-on-surface font-semibold">Paris</strong>! I am a passionate individual on a journey of self-discovery and continuous learning. Currently immersed in the beauty of the French language, I find joy in unraveling the intricacies of living in this vibrant city.
+          </p>
+          <p class="font-body-md text-body-md text-on-surface-variant max-w-3xl">
+            My heart beats to the rhythm of technology, particularly in the realm of <strong class="text-on-surface font-semibold">Laravel &amp; PHP development</strong>. A devoted enthusiast, I've not only honed my skills but also contributed to the community by volunteering at conferences and sharing insights at meetups. The thrill of exchanging knowledge on various subjects ignites my spirit; I am always eager to engage in conversations ranging from coding to the wonders of the world.
+          </p>
+          <p class="font-body-md text-body-md text-on-surface-variant max-w-3xl">
+            <strong class="text-on-surface font-semibold">Music</strong> has been an integral part of my life since college, where drumming was my muse. The pandemic nudged me to explore new melodies, leading me to pick up the guitar with renewed enthusiasm. Every strum is a step into uncharted territory, and I relish the challenge of this musical evolution.
+          </p>
+          <p class="font-body-md text-body-md text-on-surface-variant max-w-3xl">
+            Beyond the digital realm and musical notes, I crave adventure. <strong class="text-on-surface font-semibold">Traveling</strong> allows me to capture the essence of diverse cultures through my lens. Armed with my phone, I seek stories in every corner of the globe, freezing moments in time.
+          </p>
+          <p class="font-body-md text-body-md text-on-surface-variant max-w-3xl">
+            In essence, I am a melody of passions — from coding to creating music, and exploring the world through a photographer's lens. Join me in this symphony of life as I continue to learn, share, and embrace the myriad experiences that come my way.
+          </p>
 
-        <div class="row">
-          <div class="col-lg-12">
-            <h3 class="resume-title">Professional Experience</h3>
-            <div class="resume-item">
-              <h4>Backend Software Engineer - Platform</h4>
-              <h5>Oct, 2024 - Present</h5>
-              <p><em>Polar Analytics, Paris, France</em><a href="https://polaranalytics.co" target="_blank" rel="noopener noreferrer"> <i class="fa fa-fw fa-external-link"></i> </a></p>
-              <p><strong>Projects/Features contributed to:</strong>
-                <ul>
-                  <li>
-                    Internal Integrations<a href="https://escape.tech/" target="_blank" rel="noopener noreferrer"> <i class="fa fa-fw fa-external-link"></i> </a>
-                    <p><em>I was responsible for developing and maintaining the <a href="https://intercom.help/polar-app/en/articles/5635048-klaviyo" target="_blank" rel="noopener noreferrer">Klaviyo API integration <i class="fa fa-fw fa-external-link"></i></a> within the Core Platform Tool, handling data extraction from <a href="https://developers.klaviyo.com/en/docs/export_data_from_klaviyo" target="_blank" rel="noopener noreferrer">Klaviyo <i class="fa fa-fw fa-external-link"></i></a>, followed by efficient storage and transformation within Polar's internal database systems.</em></p>
-                  </li>
-                </ul>
+          <div class="grid grid-cols-1 sm:grid-cols-[200px_1fr] gap-lg pt-lg border-t border-outline-variant/20">
+            <img src="assets/img/profile-img.jpeg" alt="Abhishek Jain" class="profile-photo w-full max-w-[200px] rounded-lg border border-outline-variant/30" width="200" height="200">
+            <div>
+              <h3 class="font-headline-sm text-headline-sm text-on-surface mb-sm">Senior Software Engineer</h3>
+              <p class="font-body-md text-body-md text-on-surface-variant mb-md">
+                I offer 8+ years of experience with combined expertise in Node JS, PHP/Laravel, Golang, RDBMS, AWS (EC2, SNS, S3, CloudWatch), Linux, REST APIs, Redis, and more. I have worked in multiple domains and on multiple projects in freelancing as well.
               </p>
-              <p>Tech Stack: <strong>NodeJS, TypeScript, Python, Docker, Redis, Postgres, AWS </strong></p>
-            </div>
-            
-            <div class="resume-item">
-              <h4>Software Engineer</h4>
-              <h5>Apr, 2024 - Sep, 2024</h5>
-              <p><em>Escape, Paris, France</em><a href="https://escape.tech" target="_blank" rel="noopener noreferrer"> <i class="fa fa-fw fa-external-link"></i> </a></p>
-              <p><strong>Projects/Features contributed to:</strong>
-                <ul>
-                  <li>
-                    Escape Saas Integrations<a href="https://docs.escape.tech/documentation/inventory/integrations/" target="_blank" rel="noopener noreferrer"> <i class="fa fa-fw fa-external-link"></i> </a>
-                    <p><em>I worked on the SAAS product as a part of my daily responsibilities. I worked on multiple Integrations including but not limited to <a href="https://docs.escape.tech/documentation/governance/workflows/jira" target="_blank" rel="noopener noreferrer">JIRA <i class="fa fa-fw fa-external-link"></i></a>, <a href="https://docs.escape.tech/documentation/inventory/integrations/github" target="_blank" rel="noopener noreferrer">Github <i class="fa fa-fw fa-external-link"></i></a>, <a href="https://docs.escape.tech/documentation/inventory/integrations/gitlab" target="_blank" rel="noopener noreferrer">Gitlab <i class="fa fa-fw fa-external-link"></i></a>, <a href="https://docs.escape.tech/documentation/inventory/integrations/bitbucket/" target="_blank" rel="noopener noreferrer">Bitbucket <i class="fa fa-fw fa-external-link"></i></a>, <a href="https://docs.escape.tech/documentation/inventory/integrations/postman" target="_blank" rel="noopener noreferrer">Postman <i class="fa fa-fw fa-external-link"></i></a>, <a href="https://docs.escape.tech/documentation/inventory/integrations/apigee/" target="_blank" rel="noopener noreferrer">Apigee <i class="fa fa-fw fa-external-link"></i></a>, <a href="https://docs.escape.tech/documentation/inventory/integrations/azure-devops/" target="_blank" rel="noopener noreferrer">Azure Devops <i class="fa fa-fw fa-external-link"></i></a>, <a href="https://docs.escape.tech/documentation/inventory/integrations/gcp/" target="_blank" rel="noopener noreferrer">GCP <i class="fa fa-fw fa-external-link"></i></a>, etc </em></p>
-                  </li>
-                </ul>
-              </p>
-              <p>Tech Stack: <strong>NodeJS, SvelteJS, TypeScript, Python, Golang, Kafka, Docker, Kubernetes, Postgres, Grafana, AWS </strong></p>
-            </div>
-
-            <div class="resume-item">
-              <h4>Software Engineer Specialist</h4>
-              <h5>Sep, 2022 - Apr, 2024</h5>
-              <p><em>Kaleyra - Acq. by Tata Communications, Bangalore, India</em><a href="https://kaleyra.com" target="_blank" rel="noopener noreferrer"> <i class="fa fa-fw fa-external-link"></i> </a></p>
-              <p><strong>Projects/Features contributed to:</strong>
-                <ul>
-                  <li>
-                    WhatsApp Campaigns<a href="https://developers.kaleyra.io/docs/whatsapp-campaign-overview" target="_blank" rel="noopener noreferrer"> <i class="fa fa-fw fa-external-link"></i> </a>
-                    <p><em>I implemented this feature from scratch, and it is now an integral part of the product, capable of handling over 20M+ requests daily. This feature not only meets the design specifications but also exceeds performance expectations, demonstrating my ability to translate design concepts into robust, scalable solutions.</em></p>
-                  </li>
-                  <li>
-                    WhatsApp Automated Number Registration<a href="https://developers.kaleyra.io/docs/automated-whatsapp-number-registration" target="_blank" rel="noopener noreferrer"> <i class="fa fa-fw fa-external-link"></i> </a>
-                    <p><em>I spearheaded the development of a feature aimed at streamlining the onboarding process for our operations team. By leveraging efficient workflows, this feature significantly reduced the time required for our operations team to onboard a new customer and create their WhatsApp Business account. This not only improved operational efficiency but also enhanced the overall customer experience by minimizing the time-to-value for our clients.</em></p>
-                  </li>
-                  <li>
-                    WhatsApp APIs<a href="https://developers.kaleyra.io/docs/whatsapp-api" target="_blank" rel="noopener noreferrer"> <i class="fa fa-fw fa-external-link"></i> </a>
-                    <p><em>A significant portion of my daily responsibilities at Kaleyra involved managing and optimizing WhatsApp APIs to ensure efficient performance and reliability. I took a proactive approach to continuously refine and optimize these APIs, maximizing their efficiency and effectiveness in facilitating seamless communication for our clients.</em></p>
-                  </li>
-                </ul>
-              </p>
-              <p>Tech Stack: <strong>NodeJS, PHP(Laravel, Lumen) Golang, Redis, MySQL, MongoDB, Docker, Kubernetes</strong></p>
-            </div>
-
-            <div class="resume-item">
-              <h4>Software Engineer </h4>
-              <h5>Mar, 2021 - Sep, 2022</h5>
-              <p><em>Acquia</em><a href="https://acquia.com" target="_blank" rel="noopener noreferrer"> <i class="fa fa-fw fa-external-link"></i> </a></p>
-              
-              <p><strong>Projects/Features contributed to:</strong>
-                <ul>
-                  <li>
-                    Acquia Campaign Studio<a href="https://www.acquia.com/products/acquia-campaign-studio" target="_blank" rel="noopener noreferrer"> <i class="fa fa-fw fa-external-link"></i> </a>
-                    <p><em>I led efforts to enhance the Campaign Studio feature, focusing on optimizing its performance, particularly for handling large volumes of data transmitted via API. By identifying and addressing underlying issues, I ensured that the Campaign Studio functioned seamlessly, even under high loads, enabling our clients to create their campaign journey efficiently.</em></p>
-                  </li>
-                  <li>
-                    Acquia Internal Tool Automation
-                    <p><em>I innovatively conceptualized and developed an automation feature for an internal tool wihch served as a maintenance tool for Campaign Studio servers. This automation significantly reduced the manual workload for SREs by streamlining and automating routine maintenance tasks. This feature not only enhanced operational efficiency but also minimized the risk of human error.</em></p>
-                  </li>
-                  <li>
-                    PHP 5.8 -> 7.4
-                    <p><em> I undertook the responsibility of upgrading an internal tool created in Laravel 6 from PHP 5.8 to PHP 7.4, along with upgrading its dependencies. This migration not only ensured that our tool remained up-to-date with the latest technologies and security standards but also enhanced its performance and scalability.</em></p>
-                  </li>
-                </ul>
-              </p>
-              <p>Tech Stack: <strong>PHP(Laravel, Symfony), Javascript, Redis, MySQL, Docker, Kubernetes</strong></p>
-            </div>
-            <div class="resume-item">
-              <h4>Software Engineer </h4>
-              <h5>Jul, 2019 - Mar, 2021</h5>
-              <p><em>Collegedunia Web Pvt Ltd</em><a href="https://collegedunia.com" target="_blank" rel="noopener noreferrer"> <i class="fa fa-fw fa-external-link"></i> </a></p>
-              
-              <p><strong>Projects/Features contributed to:</strong>
-                <ul>
-                  <li>
-                    Collegedunia.com<a href="https://www.collegedunia.com/" target="_blank" rel="noopener noreferrer"> <i class="fa fa-fw fa-external-link"></i> </a>
-                    <p><em>I worked on the core product enhancing multiple features, introducing new features and implementing new coding practices and standards while doing so.</em></p>
-                  </li>
-                </ul>
-              </p>
-              <p>Tech Stack: <strong>PHP(Laravel, Monolith), Javascript, Redis, Memcached, MySQL(MariaDB), AWS Cloud</strong></p>
-            </div>
-            <div class="resume-item">
-              <h4>Backend Developer </h4>
-              <h5>Sep, 2018 - Jul, 2019</h5>
-              <p><em>CTE International Pvt Ltd</em></p>
-              
-              <p><strong>Projects/Features contributed to:</strong>
-                <ul>
-                  <li>
-                    mobi-hub.com<a href="https://www.mobi-hub.com/" target="_blank" rel="noopener noreferrer"> <i class="fa fa-fw fa-external-link"></i> </a>
-                    <p><em>Worked on Entire API Structure from scratch and developed REST APIs of mobile application Mobi-Hub for more optimized and robust solution</em></p>
-                  </li>
-                </ul>
-              </p>
-              <p>Tech Stack: <strong>PHP(CodeIgniter), Javascript(Jquery), Redis, Memcached, MySQL(MariaDB/PhpMyAdmin), AWS Cloud, Nginx</strong></p>
-            </div>
-            <div class="resume-item">
-              <h4>Software Developer </h4>
-              <h5>Jul, 2016 - Sep, 2018</h5>
-              <p><em>Olympiad Success</em><a href="https://olympiadsuccess.com" target="_blank" rel="noopener noreferrer"> <i class="fa fa-fw fa-external-link"></i> </a></p>
-              
-              <p><strong>Projects/Features contributed to:</strong>
-                <ul>
-                  <li>
-                    Olympiadsuccess.com<a href="https://www.olympiadsuccess.com/" target="_blank" rel="noopener noreferrer"> <i class="fa fa-fw fa-external-link"></i> </a>
-                    <p><em>I worked on the core product enhancing multiple features, introducing new features and implementing new coding practices and standards while doing so.</em></p>
-                  </li>
-                  <li>
-                    Free Saturday Online Test<a href="https://www.olympiadsuccess.com/olympiad-test-practice/" target="_blank" rel="noopener noreferrer"> <i class="fa fa-fw fa-external-link"></i> </a>
-                    <p><em>Built the feature from ideation to launch and maintainence leading to a boost in sign-ups and becoming key part of core product marketing.</em></p>
-                  </li>
-                </ul>
-              </p>
-              <p>Tech Stack: <strong>PHP(CodeIgniter), Javascript(Jquery), MySQL(MariaDB/PhpMyAdmin), Nginx, AWS Cloud</strong></p>
+              <dl class="grid grid-cols-1 sm:grid-cols-2 gap-sm font-label-md text-label-md">
+                <div><dt class="text-on-surface-variant/70 inline">Website: </dt><dd class="inline text-on-surface">jazeabby.in</dd></div>
+                <div><dt class="text-on-surface-variant/70 inline">City: </dt><dd class="inline text-on-surface">Nanterre, Île-de-France, France</dd></div>
+                <div><dt class="text-on-surface-variant/70 inline">Age: </dt><dd class="inline text-on-surface">29</dd></div>
+                <div><dt class="text-on-surface-variant/70 inline">Email: </dt><dd class="inline"><a href="mailto:hello@jazeabby.in" class="text-secondary hover:underline">hello@jazeabby.in</a></dd></div>
+              </dl>
             </div>
           </div>
-          
-          <div class="col-lg-12">
+        </div>
+      </div>
+    </section>
 
-            <h3 class="resume-title">Volunteering</h3>
-            <div class="resume-item">
-              <h4>Laravel - India Community</h4>
-              <h5>2018 - 2023</h5>
-              <ul>
-                <li>Volunteered in Organising LaraconIn 2023 <a href="https://laracon.in/laracon-2023/index.html" target="_blank" rel="noopener noreferrer"> <i class="fa fa-fw fa-external-link"></i> </a></li>
-                <li>Speaker at LaravelLive Delhi on multiple occasions <a href="https://laravellivedelhi.in/meetups.html" target="_blank" rel="noopener noreferrer"> <i class="fa fa-fw fa-external-link"></i> </a></li>
-                <li>Organiser of multiple meetups at LaravelLive Delhi <a href="https://laravellivedelhi.in/" target="_blank" rel="noopener noreferrer"> <i class="fa fa-fw fa-external-link"></i> </a></li>
+    <!-- Systems / Skills -->
+    <section class="border-t border-outline-variant/30 pt-xl pb-xl" id="systems">
+      <div class="max-w-[1280px] mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-12 gap-gutter">
+        <div class="md:col-span-4 mb-lg md:mb-0">
+          <h2 class="font-headline-lg text-headline-lg text-on-surface">Systems</h2>
+          <p class="font-body-md text-body-md text-on-surface-variant mt-md">Some of the skills I have acquired during my experience.</p>
+        </div>
+        <div class="md:col-span-8 flex flex-col gap-lg">
+
+          <div>
+            <h3 class="font-label-md text-label-md text-secondary mb-md uppercase tracking-wider">Backend</h3>
+            <div class="flex gap-sm flex-wrap">
+              <span class="skill-chip px-sm py-xs border border-outline-variant/50 rounded bg-surface-container text-on-surface font-label-sm text-label-sm"><img src="assets/icons/php.svg" alt=""> PHP</span>
+              <span class="skill-chip px-sm py-xs border border-outline-variant/50 rounded bg-surface-container text-on-surface font-label-sm text-label-sm"><img src="assets/icons/nodejs.svg" alt=""> Node.js</span>
+              <span class="skill-chip px-sm py-xs border border-outline-variant/50 rounded bg-surface-container text-on-surface font-label-sm text-label-sm"><img src="assets/icons/go.svg" alt=""> Golang</span>
+              <span class="skill-chip px-sm py-xs border border-outline-variant/50 rounded bg-surface-container text-on-surface font-label-sm text-label-sm"><img src="assets/icons/python.svg" alt=""> Python</span>
+            </div>
+          </div>
+
+          <div>
+            <h3 class="font-label-md text-label-md text-secondary mb-md uppercase tracking-wider">AWS and Cloud</h3>
+            <div class="flex gap-sm flex-wrap">
+              <span class="skill-chip px-sm py-xs border border-outline-variant/50 rounded bg-surface-container text-on-surface font-label-sm text-label-sm"><img src="assets/icons/amazonec2.svg" alt=""> EC2</span>
+              <span class="skill-chip px-sm py-xs border border-outline-variant/50 rounded bg-surface-container text-on-surface font-label-sm text-label-sm"><img src="assets/icons/amazonrds.svg" alt=""> RDS</span>
+              <span class="skill-chip px-sm py-xs border border-outline-variant/50 rounded bg-surface-container text-on-surface font-label-sm text-label-sm"><img src="assets/icons/amazons3.svg" alt=""> S3</span>
+              <span class="skill-chip px-sm py-xs border border-outline-variant/50 rounded bg-surface-container text-on-surface font-label-sm text-label-sm"><img src="assets/icons/amazonelb.svg" alt=""> ELB</span>
+              <span class="skill-chip px-sm py-xs border border-outline-variant/50 rounded bg-surface-container text-on-surface font-label-sm text-label-sm"><img src="assets/icons/amazonses.svg" alt=""> SES</span>
+              <span class="skill-chip px-sm py-xs border border-outline-variant/50 rounded bg-surface-container text-on-surface font-label-sm text-label-sm"><img src="assets/icons/amazondynamodb.svg" alt=""> DynamoDB</span>
+              <span class="skill-chip px-sm py-xs border border-outline-variant/50 rounded bg-surface-container text-on-surface font-label-sm text-label-sm"><img src="assets/icons/amazonsqs.svg" alt=""> SQS</span>
+              <span class="skill-chip px-sm py-xs border border-outline-variant/50 rounded bg-surface-container text-on-surface font-label-sm text-label-sm"><img src="assets/icons/amazonlambda.svg" alt=""> Lambda</span>
+              <span class="skill-chip px-sm py-xs border border-outline-variant/50 rounded bg-surface-container text-on-surface font-label-sm text-label-sm"><img src="assets/icons/amazoncloudwatch.svg" alt=""> CloudWatch</span>
+              <span class="skill-chip px-sm py-xs border border-outline-variant/50 rounded bg-surface-container text-on-surface font-label-sm text-label-sm"><img src="assets/icons/amazoniam.svg" alt=""> IAM</span>
+              <span class="skill-chip px-sm py-xs border border-outline-variant/50 rounded bg-surface-container text-on-surface font-label-sm text-label-sm"><img src="assets/icons/googlecloud.svg" alt=""> GCP</span>
+            </div>
+          </div>
+
+          <div>
+            <h3 class="font-label-md text-label-md text-secondary mb-md uppercase tracking-wider">Frameworks</h3>
+            <div class="flex gap-sm flex-wrap">
+              <span class="skill-chip px-sm py-xs border border-outline-variant/50 rounded bg-surface-container text-on-surface font-label-sm text-label-sm"><img src="assets/icons/express.svg" alt=""> Express</span>
+              <span class="skill-chip px-sm py-xs border border-outline-variant/50 rounded bg-surface-container text-on-surface font-label-sm text-label-sm"><img src="assets/icons/nextjs.svg" alt=""> NextJS</span>
+              <span class="skill-chip px-sm py-xs border border-outline-variant/50 rounded bg-surface-container text-on-surface font-label-sm text-label-sm"><img src="assets/icons/nestjs.svg" alt=""> NestJS</span>
+              <span class="skill-chip px-sm py-xs border border-outline-variant/50 rounded bg-surface-container text-on-surface font-label-sm text-label-sm"><img src="assets/icons/flask.svg" alt=""> Flask</span>
+              <span class="skill-chip px-sm py-xs border border-outline-variant/50 rounded bg-surface-container text-on-surface font-label-sm text-label-sm"><img src="assets/icons/laravel.svg" alt=""> Laravel</span>
+              <span class="skill-chip px-sm py-xs border border-outline-variant/50 rounded bg-surface-container text-on-surface font-label-sm text-label-sm"><img src="assets/icons/symfony.svg" alt=""> Symfony</span>
+              <span class="skill-chip px-sm py-xs border border-outline-variant/50 rounded bg-surface-container text-on-surface font-label-sm text-label-sm"><img src="assets/icons/codeigniter.svg" alt=""> CodeIgniter</span>
+            </div>
+          </div>
+
+          <div>
+            <h3 class="font-label-md text-label-md text-secondary mb-md uppercase tracking-wider">Frontend</h3>
+            <div class="flex gap-sm flex-wrap">
+              <span class="skill-chip px-sm py-xs border border-outline-variant/50 rounded bg-surface-container text-on-surface font-label-sm text-label-sm"><img src="assets/icons/typescript.svg" alt=""> TypeScript</span>
+              <span class="skill-chip px-sm py-xs border border-outline-variant/50 rounded bg-surface-container text-on-surface font-label-sm text-label-sm"><img src="assets/icons/javascript.svg" alt=""> JavaScript</span>
+              <span class="skill-chip px-sm py-xs border border-outline-variant/50 rounded bg-surface-container text-on-surface font-label-sm text-label-sm"><img src="assets/icons/react.svg" alt=""> React</span>
+              <span class="skill-chip px-sm py-xs border border-outline-variant/50 rounded bg-surface-container text-on-surface font-label-sm text-label-sm"><img src="assets/icons/vuejs.svg" alt=""> Vue.js</span>
+              <span class="skill-chip px-sm py-xs border border-outline-variant/50 rounded bg-surface-container text-on-surface font-label-sm text-label-sm"><img src="assets/icons/bootstrap.svg" alt=""> Bootstrap</span>
+              <span class="skill-chip px-sm py-xs border border-outline-variant/50 rounded bg-surface-container text-on-surface font-label-sm text-label-sm"><img src="assets/icons/tailwindcss.svg" alt=""> Tailwind CSS</span>
+            </div>
+          </div>
+
+          <div>
+            <h3 class="font-label-md text-label-md text-secondary mb-md uppercase tracking-wider">Databases</h3>
+            <div class="flex gap-sm flex-wrap">
+              <span class="skill-chip px-sm py-xs border border-outline-variant/50 rounded bg-surface-container text-on-surface font-label-sm text-label-sm"><img src="assets/icons/mysql.svg" alt=""> MySQL</span>
+              <span class="skill-chip px-sm py-xs border border-outline-variant/50 rounded bg-surface-container text-on-surface font-label-sm text-label-sm"><img src="assets/icons/postgresql.svg" alt=""> PostgreSQL</span>
+              <span class="skill-chip px-sm py-xs border border-outline-variant/50 rounded bg-surface-container text-on-surface font-label-sm text-label-sm"><img src="assets/icons/mariadb.svg" alt=""> MariaDB</span>
+              <span class="skill-chip px-sm py-xs border border-outline-variant/50 rounded bg-surface-container text-on-surface font-label-sm text-label-sm"><img src="assets/icons/sqlite.svg" alt=""> SQLite</span>
+              <span class="skill-chip px-sm py-xs border border-outline-variant/50 rounded bg-surface-container text-on-surface font-label-sm text-label-sm"><img src="assets/icons/mongodb.svg" alt=""> MongoDB</span>
+              <span class="skill-chip px-sm py-xs border border-outline-variant/50 rounded bg-surface-container text-on-surface font-label-sm text-label-sm"><img src="assets/icons/redis.svg" alt=""> Redis</span>
+            </div>
+          </div>
+
+          <div>
+            <h3 class="font-label-md text-label-md text-secondary mb-md uppercase tracking-wider">DevOps and Automation</h3>
+            <div class="flex gap-sm flex-wrap">
+              <span class="skill-chip px-sm py-xs border border-outline-variant/50 rounded bg-surface-container text-on-surface font-label-sm text-label-sm"><img src="assets/icons/jenkins.svg" alt=""> Jenkins</span>
+              <span class="skill-chip px-sm py-xs border border-outline-variant/50 rounded bg-surface-container text-on-surface font-label-sm text-label-sm"><img src="assets/icons/githubactions.svg" alt=""> GitHub Actions</span>
+              <span class="skill-chip px-sm py-xs border border-outline-variant/50 rounded bg-surface-container text-on-surface font-label-sm text-label-sm"><img src="assets/icons/gitlab.svg" alt=""> GitLab CI</span>
+              <span class="skill-chip px-sm py-xs border border-outline-variant/50 rounded bg-surface-container text-on-surface font-label-sm text-label-sm"><img src="assets/icons/docker.svg" alt=""> Docker</span>
+              <span class="skill-chip px-sm py-xs border border-outline-variant/50 rounded bg-surface-container text-on-surface font-label-sm text-label-sm"><img src="assets/icons/kubernetes.svg" alt=""> Kubernetes</span>
+              <span class="skill-chip px-sm py-xs border border-outline-variant/50 rounded bg-surface-container text-on-surface font-label-sm text-label-sm"><img src="assets/icons/grafana.svg" alt=""> Grafana</span>
+            </div>
+          </div>
+
+          <div>
+            <h3 class="font-label-md text-label-md text-secondary mb-md uppercase tracking-wider">Tools and OS</h3>
+            <div class="flex gap-sm flex-wrap">
+              <span class="skill-chip px-sm py-xs border border-outline-variant/50 rounded bg-surface-container text-on-surface font-label-sm text-label-sm"><img src="assets/icons/git.svg" alt=""> Git</span>
+              <span class="skill-chip px-sm py-xs border border-outline-variant/50 rounded bg-surface-container text-on-surface font-label-sm text-label-sm"><img src="assets/icons/github.svg" alt=""> Github</span>
+              <span class="skill-chip px-sm py-xs border border-outline-variant/50 rounded bg-surface-container text-on-surface font-label-sm text-label-sm"><img src="assets/icons/gitlab.svg" alt=""> Gitlab</span>
+              <span class="skill-chip px-sm py-xs border border-outline-variant/50 rounded bg-surface-container text-on-surface font-label-sm text-label-sm"><img src="assets/icons/bitbucket.svg" alt=""> Bitbucket</span>
+              <span class="skill-chip px-sm py-xs border border-outline-variant/50 rounded bg-surface-container text-on-surface font-label-sm text-label-sm"><img src="assets/icons/slack.svg" alt=""> Slack</span>
+              <span class="skill-chip px-sm py-xs border border-outline-variant/50 rounded bg-surface-container text-on-surface font-label-sm text-label-sm"><img src="assets/icons/jira.svg" alt=""> JIRA</span>
+              <span class="skill-chip px-sm py-xs border border-outline-variant/50 rounded bg-surface-container text-on-surface font-label-sm text-label-sm"><img src="assets/icons/notion.svg" alt=""> Notion</span>
+              <span class="skill-chip px-sm py-xs border border-outline-variant/50 rounded bg-surface-container text-on-surface font-label-sm text-label-sm"><img src="assets/icons/confluence.svg" alt=""> Confluence</span>
+              <span class="skill-chip px-sm py-xs border border-outline-variant/50 rounded bg-surface-container text-on-surface font-label-sm text-label-sm"><img src="assets/icons/trello.svg" alt=""> Trello</span>
+              <span class="skill-chip px-sm py-xs border border-outline-variant/50 rounded bg-surface-container text-on-surface font-label-sm text-label-sm"><img src="assets/icons/nginx.svg" alt=""> Nginx</span>
+              <span class="skill-chip px-sm py-xs border border-outline-variant/50 rounded bg-surface-container text-on-surface font-label-sm text-label-sm"><img src="assets/icons/linux.svg" alt=""> Linux</span>
+              <span class="skill-chip px-sm py-xs border border-outline-variant/50 rounded bg-surface-container text-on-surface font-label-sm text-label-sm"><img src="assets/icons/macos.svg" alt=""> Mac</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="border-t border-outline-variant/30 pt-xl pb-xl" id="experience">
+      <div class="max-w-[1280px] mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-12 gap-gutter">
+        <div class="md:col-span-4 mb-lg md:mb-0">
+          <h2 class="font-headline-lg text-headline-lg text-on-surface">Experience</h2>
+          <p class="font-body-md text-body-md text-on-surface-variant mt-md">My journey through professional engineering roles.</p>
+        </div>
+        <div class="md:col-span-8 flex flex-col gap-lg">
+
+          <article class="grid grid-cols-1 md:grid-cols-4 gap-md pb-lg border-b border-outline-variant/20">
+            <div class="md:col-span-1 font-label-md text-label-md text-on-surface-variant/70">Oct 2024 — Present</div>
+            <div class="md:col-span-3">
+              <h3 class="font-headline-sm text-headline-sm text-on-surface mb-xs">Backend Software Engineer — Platform</h3>
+              <div class="font-label-md text-label-md text-secondary mb-sm">
+                <a href="https://polaranalytics.co" target="_blank" rel="noopener noreferrer" class="experience-link hover:underline">Polar Analytics, Paris, France<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg></a>
+              </div>
+              <p class="font-label-sm text-label-sm text-on-surface-variant/80 mb-sm">Projects/Features contributed to:</p>
+              <ul class="font-body-md text-body-md text-on-surface-variant list-disc pl-5 space-y-sm mb-sm">
+                <li>
+                  Internal Integrations — Developed and maintained the <a href="https://intercom.help/polar-app/en/articles/5635048-klaviyo" target="_blank" rel="noopener noreferrer" class="text-secondary hover:underline">Klaviyo API integration</a>, handling data extraction from <a href="https://developers.klaviyo.com/en/docs/export_data_from_klaviyo" target="_blank" rel="noopener noreferrer" class="text-secondary hover:underline">Klaviyo</a>, followed by efficient storage and transformation within Polar's internal database systems.
+                </li>
               </ul>
+              <p class="font-label-sm text-label-sm text-on-surface-variant">Tech Stack: <strong class="text-on-surface">NodeJS, TypeScript, Python, Docker, Redis, Postgres, AWS</strong></p>
             </div>
+          </article>
 
-            <h3 class="resume-title">Education</h3>
-            <div class="resume-item">
-              <h4>Bachelors of Technology - Computer Science</h4>
-              <h5>2012 - 2016</h5>
-              <p><em>Maharshi Dayanand University, Rohtak, India</em></p>
-              <ul>
-                <li>1<sup>st</sup> in Inter-college PHP Competition</li>
-                <li>2<sup>nd</sup> in Inter-college Band Competition</li>
+          <article class="grid grid-cols-1 md:grid-cols-4 gap-md pb-lg border-b border-outline-variant/20">
+            <div class="md:col-span-1 font-label-md text-label-md text-on-surface-variant/70">Apr 2024 — Sep 2024</div>
+            <div class="md:col-span-3">
+              <h3 class="font-headline-sm text-headline-sm text-on-surface mb-xs">Software Engineer</h3>
+              <div class="font-label-md text-label-md text-secondary mb-sm">
+                <a href="https://escape.tech" target="_blank" rel="noopener noreferrer" class="experience-link hover:underline">Escape, Paris, France<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg></a>
+              </div>
+              <p class="font-label-sm text-label-sm text-on-surface-variant/80 mb-sm">Projects/Features contributed to:</p>
+              <ul class="font-body-md text-body-md text-on-surface-variant list-disc pl-5 space-y-sm mb-sm">
+                <li>
+                  Escape SaaS Integrations — Worked on multiple integrations including <a href="https://docs.escape.tech/documentation/governance/workflows/jira" target="_blank" rel="noopener noreferrer" class="text-secondary hover:underline">JIRA</a>, <a href="https://docs.escape.tech/documentation/inventory/integrations/github" target="_blank" rel="noopener noreferrer" class="text-secondary hover:underline">Github</a>, <a href="https://docs.escape.tech/documentation/inventory/integrations/gitlab" target="_blank" rel="noopener noreferrer" class="text-secondary hover:underline">Gitlab</a>, <a href="https://docs.escape.tech/documentation/inventory/integrations/bitbucket/" target="_blank" rel="noopener noreferrer" class="text-secondary hover:underline">Bitbucket</a>, <a href="https://docs.escape.tech/documentation/inventory/integrations/postman" target="_blank" rel="noopener noreferrer" class="text-secondary hover:underline">Postman</a>, <a href="https://docs.escape.tech/documentation/inventory/integrations/apigee/" target="_blank" rel="noopener noreferrer" class="text-secondary hover:underline">Apigee</a>, <a href="https://docs.escape.tech/documentation/inventory/integrations/azure-devops/" target="_blank" rel="noopener noreferrer" class="text-secondary hover:underline">Azure Devops</a>, <a href="https://docs.escape.tech/documentation/inventory/integrations/gcp/" target="_blank" rel="noopener noreferrer" class="text-secondary hover:underline">GCP</a>, and more.
+                </li>
               </ul>
+              <p class="font-label-sm text-label-sm text-on-surface-variant">Tech Stack: <strong class="text-on-surface">NodeJS, SvelteJS, TypeScript, Python, Golang, Kafka, Docker, Kubernetes, Postgres, Grafana, AWS</strong></p>
             </div>
-            
-          </div>
-        </div>
-      </div>
+          </article>
 
-
-    </section><!-- End Resume Section -->
-
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Reach out to me</h2>
-        </div>
-
-        <div class="row mt-1">
-
-          <div class="col-lg-4">
-            <div class="info">
-              <div class="address">
-                <i class="bi bi-geo-alt"></i>
-                <h4>Location:</h4>
-                <p>Nanterre, Île-de-france, France</p>
+          <article class="grid grid-cols-1 md:grid-cols-4 gap-md pb-lg border-b border-outline-variant/20">
+            <div class="md:col-span-1 font-label-md text-label-md text-on-surface-variant/70">Sep 2022 — Apr 2024</div>
+            <div class="md:col-span-3">
+              <h3 class="font-headline-sm text-headline-sm text-on-surface mb-xs">Software Engineer Specialist</h3>
+              <div class="font-label-md text-label-md text-secondary mb-sm">
+                <a href="https://kaleyra.com" target="_blank" rel="noopener noreferrer" class="experience-link hover:underline">Kaleyra — Acq. by Tata Communications, Bangalore, India<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg></a>
               </div>
-
-              <div class="email">
-                <i class="bi bi-envelope"></i>
-                <h4>Email:</h4>
-                <p>hello@jazeabby.in</p>
-              </div>
+              <ul class="font-body-md text-body-md text-on-surface-variant list-disc pl-5 space-y-sm mb-sm">
+                <li><a href="https://developers.kaleyra.io/docs/whatsapp-campaign-overview" target="_blank" rel="noopener noreferrer" class="text-secondary hover:underline">WhatsApp Campaigns</a> — Implemented from scratch; now handles 20M+ requests daily with performance exceeding design specifications.</li>
+                <li><a href="https://developers.kaleyra.io/docs/automated-whatsapp-number-registration" target="_blank" rel="noopener noreferrer" class="text-secondary hover:underline">WhatsApp Automated Number Registration</a> — Streamlined onboarding for operations, significantly reducing time-to-value for clients.</li>
+                <li><a href="https://developers.kaleyra.io/docs/whatsapp-api" target="_blank" rel="noopener noreferrer" class="text-secondary hover:underline">WhatsApp APIs</a> — Proactively refined and optimized APIs for efficient, reliable client communication.</li>
+              </ul>
+              <p class="font-label-sm text-label-sm text-on-surface-variant">Tech Stack: <strong class="text-on-surface">NodeJS, PHP (Laravel, Lumen), Golang, Redis, MySQL, MongoDB, Docker, Kubernetes</strong></p>
             </div>
+          </article>
 
-          </div>
+          <article class="grid grid-cols-1 md:grid-cols-4 gap-md pb-lg border-b border-outline-variant/20">
+            <div class="md:col-span-1 font-label-md text-label-md text-on-surface-variant/70">Mar 2021 — Sep 2022</div>
+            <div class="md:col-span-3">
+              <h3 class="font-headline-sm text-headline-sm text-on-surface mb-xs">Software Engineer</h3>
+              <div class="font-label-md text-label-md text-secondary mb-sm">
+                <a href="https://acquia.com" target="_blank" rel="noopener noreferrer" class="experience-link hover:underline">Acquia<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg></a>
+              </div>
+              <ul class="font-body-md text-body-md text-on-surface-variant list-disc pl-5 space-y-sm mb-sm">
+                <li><a href="https://www.acquia.com/products/acquia-campaign-studio" target="_blank" rel="noopener noreferrer" class="text-secondary hover:underline">Acquia Campaign Studio</a> — Enhanced performance for large API data volumes under high load.</li>
+                <li>Acquia Internal Tool Automation — Reduced manual SRE workload by automating routine Campaign Studio server maintenance.</li>
+                <li>PHP 5.8 → 7.4 — Upgraded internal Laravel 6 tool and dependencies for security, performance, and scalability.</li>
+              </ul>
+              <p class="font-label-sm text-label-sm text-on-surface-variant">Tech Stack: <strong class="text-on-surface">PHP (Laravel, Symfony), Javascript, Redis, MySQL, Docker, Kubernetes</strong></p>
+            </div>
+          </article>
 
-          <div class="col-lg-8 mt-5 mt-lg-0">
+          <article class="grid grid-cols-1 md:grid-cols-4 gap-md pb-lg border-b border-outline-variant/20">
+            <div class="md:col-span-1 font-label-md text-label-md text-on-surface-variant/70">Jul 2019 — Mar 2021</div>
+            <div class="md:col-span-3">
+              <h3 class="font-headline-sm text-headline-sm text-on-surface mb-xs">Software Engineer</h3>
+              <div class="font-label-md text-label-md text-secondary mb-sm">
+                <a href="https://collegedunia.com" target="_blank" rel="noopener noreferrer" class="experience-link hover:underline">Collegedunia Web Pvt Ltd<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg></a>
+              </div>
+              <ul class="font-body-md text-body-md text-on-surface-variant list-disc pl-5 space-y-sm mb-sm">
+                <li><a href="https://www.collegedunia.com/" target="_blank" rel="noopener noreferrer" class="text-secondary hover:underline">Collegedunia.com</a> — Enhanced core product features and introduced new coding practices and standards.</li>
+              </ul>
+              <p class="font-label-sm text-label-sm text-on-surface-variant">Tech Stack: <strong class="text-on-surface">PHP (Laravel, Monolith), Javascript, Redis, Memcached, MySQL (MariaDB), AWS Cloud</strong></p>
+            </div>
+          </article>
 
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="row">
-                <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-                </div>
-                <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-                </div>
-              </div>
-              <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-              </div>
-              <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-              </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
-            </form>
+          <article class="grid grid-cols-1 md:grid-cols-4 gap-md pb-lg border-b border-outline-variant/20">
+            <div class="md:col-span-1 font-label-md text-label-md text-on-surface-variant/70">Sep 2018 — Jul 2019</div>
+            <div class="md:col-span-3">
+              <h3 class="font-headline-sm text-headline-sm text-on-surface mb-xs">Backend Developer</h3>
+              <div class="font-label-md text-label-md text-secondary mb-sm">CTE International Pvt Ltd</div>
+              <ul class="font-body-md text-body-md text-on-surface-variant list-disc pl-5 space-y-sm mb-sm">
+                <li><a href="https://www.mobi-hub.com/" target="_blank" rel="noopener noreferrer" class="text-secondary hover:underline">mobi-hub.com</a> — Built entire API structure from scratch; developed REST APIs for the Mobi-Hub mobile application.</li>
+              </ul>
+              <p class="font-label-sm text-label-sm text-on-surface-variant">Tech Stack: <strong class="text-on-surface">PHP (CodeIgniter), Javascript (Jquery), Redis, Memcached, MySQL (MariaDB), AWS Cloud, Nginx</strong></p>
+            </div>
+          </article>
 
-          </div>
+          <article class="grid grid-cols-1 md:grid-cols-4 gap-md pb-lg">
+            <div class="md:col-span-1 font-label-md text-label-md text-on-surface-variant/70">Jul 2016 — Sep 2018</div>
+            <div class="md:col-span-3">
+              <h3 class="font-headline-sm text-headline-sm text-on-surface mb-xs">Software Developer</h3>
+              <div class="font-label-md text-label-md text-secondary mb-sm">
+                <a href="https://olympiadsuccess.com" target="_blank" rel="noopener noreferrer" class="experience-link hover:underline">Olympiad Success<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg></a>
+              </div>
+              <ul class="font-body-md text-body-md text-on-surface-variant list-disc pl-5 space-y-sm mb-sm">
+                <li><a href="https://www.olympiadsuccess.com/" target="_blank" rel="noopener noreferrer" class="text-secondary hover:underline">Olympiadsuccess.com</a> — Enhanced core product features and implemented new coding practices.</li>
+                <li><a href="https://www.olympiadsuccess.com/olympiad-test-practice/" target="_blank" rel="noopener noreferrer" class="text-secondary hover:underline">Free Saturday Online Test</a> — Built from ideation to launch; boosted sign-ups and became key product marketing.</li>
+              </ul>
+              <p class="font-label-sm text-label-sm text-on-surface-variant">Tech Stack: <strong class="text-on-surface">PHP (CodeIgniter), Javascript (Jquery), MySQL (MariaDB), Nginx, AWS Cloud</strong></p>
+            </div>
+          </article>
 
         </div>
-
       </div>
-    </section><!-- End Contact Section -->
+    </section>
 
-  </main><!-- End #main -->
+    <!-- Education & Community -->
+    <section class="border-t border-outline-variant/30 pt-xl pb-xl" id="education">
+      <div class="max-w-[1280px] mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-12 gap-gutter">
+        <div class="md:col-span-4 mb-lg md:mb-0">
+          <h2 class="font-headline-lg text-headline-lg text-on-surface">Education &amp; Community</h2>
+        </div>
+        <div class="md:col-span-8 flex flex-col gap-lg">
 
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <div class="container">
-      <h3>jazeabby</h3>
-      <!-- <p>Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe commodi placeat.</p> -->
-      <div class="social-links">
-        <a href="https://twitter.com/jazeabby" target="_blank" class="twitter"><i class="bx bxl-twitter"></i></a>
-        <a href="https://www.linkedin.com/in/jazeabby/" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-        <a href="https://github.com/jazeabby" target="_blank" class="facebook"><i class="bx bxl-github"></i></a>
-        <a href="https://stackoverflow.com/users/8578579/jazeabby" target="_blank" class="facebook"><i class="bx bxl-stack-overflow"></i></a>
-        <!-- <a href="#" target="_blank" class="instagram"><i class="bx bxl-instagram"></i></a> -->
-        <!-- <a href="#" target="_blank" class="google-plus"><i class="bx bxl-skype"></i></a> -->
+          <article class="pb-lg border-b border-outline-variant/20">
+            <h3 class="font-headline-sm text-headline-sm text-on-surface mb-xs">Volunteering — Laravel India Community</h3>
+            <p class="font-label-md text-label-md text-on-surface-variant/70 mb-sm">2018 — 2023</p>
+            <ul class="font-body-md text-body-md text-on-surface-variant list-disc pl-5 space-y-xs">
+              <li>Volunteered in organising <a href="https://laracon.in/laracon-2023/index.html" target="_blank" rel="noopener noreferrer" class="text-secondary hover:underline">LaraconIn 2023</a></li>
+              <li>Speaker at <a href="https://laravellivedelhi.in/meetups.html" target="_blank" rel="noopener noreferrer" class="text-secondary hover:underline">LaravelLive Delhi</a> on multiple occasions</li>
+              <li>Organiser of multiple meetups at <a href="https://laravellivedelhi.in/" target="_blank" rel="noopener noreferrer" class="text-secondary hover:underline">LaravelLive Delhi</a></li>
+            </ul>
+          </article>
+
+          <article>
+            <h3 class="font-headline-sm text-headline-sm text-on-surface mb-xs">Bachelors of Technology — Computer Science</h3>
+            <p class="font-label-md text-label-md text-on-surface-variant/70 mb-sm">2012 — 2016</p>
+            <p class="font-body-md text-body-md text-on-surface-variant mb-sm">Maharshi Dayanand University, Rohtak, India</p>
+            <ul class="font-body-md text-body-md text-on-surface-variant list-disc pl-5 space-y-xs">
+              <li>1<sup>st</sup> in Inter-college PHP Competition</li>
+              <li>2<sup>nd</sup> in Inter-college Band Competition</li>
+            </ul>
+          </article>
+
+        </div>
       </div>
-      <div class="copyright">
-        &copy; Copyright <strong><span>jazeabby</span></strong>. All Rights Reserved
+    </section>
+
+    <!-- Contact -->
+    <section class="border-t border-outline-variant/30 pt-xl pb-xl" id="contact">
+      <div class="max-w-[1280px] mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-12 gap-gutter">
+        <div class="md:col-span-4 mb-lg md:mb-0">
+          <h2 class="font-headline-lg text-headline-lg text-on-surface">Reach Out</h2>
+        </div>
+        <div class="md:col-span-8 flex flex-col gap-lg">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-lg">
+            <div>
+              <h3 class="font-label-md text-label-md text-secondary mb-xs">Location</h3>
+              <p class="font-body-md text-body-md text-on-surface-variant">Nanterre, Île-de-France, France</p>
+            </div>
+            <div>
+              <h3 class="font-label-md text-label-md text-secondary mb-xs">Email</h3>
+              <p class="font-body-md text-body-md"><a href="mailto:hello@jazeabby.in" class="text-on-surface hover:text-secondary transition-colors">hello@jazeabby.in</a></p>
+            </div>
+          </div>
+          <div class="flex flex-wrap gap-md pt-md">
+            <a href="mailto:hello@jazeabby.in?subject=Hello%20from%20your%20portfolio" class="inline-flex px-md py-sm border border-secondary text-secondary font-label-md text-label-md hover:bg-secondary hover:text-surface transition-colors duration-300 rounded">Send Email</a>
+            <a href="Abhishek%20Jain%20Resume%202.pdf" target="_blank" rel="noopener noreferrer" class="inline-flex px-md py-sm border border-outline-variant text-on-surface font-label-md text-label-md hover:text-secondary hover:border-secondary transition-colors duration-300 rounded">Download Resume</a>
+          </div>
+        </div>
       </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: [license-url] -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/ -->
-        Designed by <a href="https://bootstrapmade.com/" target="_blank" rel="noopener noreferrer">BootstrapMade</a>
+    </section>
+
+  </main>
+
+  <footer class="bg-surface-container-lowest border-t border-outline-variant/20 w-full py-xl">
+    <div class="px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-12 gap-gutter max-w-[1280px] mx-auto">
+      <div class="md:col-span-6 flex flex-col justify-between">
+        <div class="font-headline-sm text-headline-sm text-on-surface mb-lg">jazeabby</div>
+        <div class="font-label-sm text-label-sm text-on-surface-variant">
+          &copy; 2026 Abhishek Jain. All rights reserved.
+        </div>
+      </div>
+      <div class="md:col-span-6 flex md:justify-end gap-lg mt-lg md:mt-0">
+        <div class="flex flex-col gap-sm">
+          <a class="font-label-sm text-label-sm text-on-surface-variant hover:text-secondary transition-colors" href="https://www.linkedin.com/in/jazeabby/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a class="font-label-sm text-label-sm text-on-surface-variant hover:text-secondary transition-colors" href="https://github.com/jazeabby" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a class="font-label-sm text-label-sm text-on-surface-variant hover:text-secondary transition-colors" href="https://twitter.com/jazeabby" target="_blank" rel="noopener noreferrer">Twitter</a>
+        </div>
+        <div class="flex flex-col gap-sm">
+          <a class="font-label-sm text-label-sm text-on-surface-variant hover:text-secondary transition-colors" href="mailto:hello@jazeabby.in">Email</a>
+          <a class="font-label-sm text-label-sm text-on-surface-variant hover:text-secondary transition-colors" href="https://stackoverflow.com/users/8578579/jazeabby" target="_blank" rel="noopener noreferrer">Stack Overflow</a>
+          <a class="font-label-sm text-label-sm text-on-surface-variant hover:text-secondary transition-colors" href="Abhishek%20Jain%20Resume%202.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+        </div>
       </div>
     </div>
-  </footer><!-- End Footer -->
+  </footer>
 
-  <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/typed.js/typed.umd.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-  <script src="dist/js/jquery.min.js"></script>
-  <script type='text/javascript'>
-    $(window).scroll(function () {
-      
-      // document.addEventListener('DOMContentLoaded', function () {
-      $('svg').each(function (i) {
-          var bottom_of_object = $(this).offset().top + ($(this).outerHeight() * 0.5);
-          var bottom_of_window = $(window).scrollTop() + $(window).height();
-          if (bottom_of_window > bottom_of_object) {
-              $(this).addClass('animated');
-          }
-      });
-      // window.setTimeout(document.querySelector('svg').classList.add('animated'),1000);
-    });
-  </script>
-  <script src="https://kit.fontawesome.com/906fcf1df1.js" crossorigin="anonymous"></script>
-
+  <script src="assets/js/portfolio.js"></script>
 </body>
-
 </html>
