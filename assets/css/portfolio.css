@@ -133,8 +133,15 @@ body {
   position: relative;
   width: 100%;
   min-height: 100vh;
-  overflow: hidden;
   isolation: isolate;
+}
+
+.parallax-media {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  z-index: 0;
+  pointer-events: none;
 }
 
 .parallax-bg {
@@ -207,6 +214,13 @@ body {
 @media (min-width: 768px) {
   .content-panel {
     padding: 2rem;
+  }
+
+  .section-heading {
+    position: sticky;
+    top: 6rem;
+    align-self: start;
+    z-index: 3;
   }
 }
 
