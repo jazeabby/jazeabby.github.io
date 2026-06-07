@@ -119,4 +119,12 @@
     window.addEventListener("scroll", requestParallaxUpdate, { passive: true });
     window.addEventListener("resize", requestParallaxUpdate);
   }
+
+  var experienceList = document.getElementById("experience-list");
+
+  if (experienceList && typeof window.renderExperienceList === "function") {
+    var experienceData = window.EXPERIENCE_DATA || {};
+    var entries = Array.isArray(experienceData.entries) ? experienceData.entries : [];
+    experienceList.innerHTML = window.renderExperienceList(entries);
+  }
 })();
